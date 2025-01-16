@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="Impressum - Buchbloggerin auf TikTok">
     <title>Impressum - Line's Pages</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
@@ -14,6 +14,14 @@
             font-family: 'Playfair Display', serif;
             background-color: #EED5D2;
             color: #333;
+            overflow-x: hidden; /* Verhindert horizontales Scrollen */
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
             opacity: 0;
             animation: fadeIn 0.8s ease-in-out forwards;
         }
@@ -27,12 +35,6 @@
             }
         }
 
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
         header {
             background-color: #8B6969;
             color: white;
@@ -40,6 +42,7 @@
             text-align: center;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
             position: relative;
+            width: 100%;
         }
 
         .back-arrow {
@@ -67,7 +70,7 @@
             background-size: cover;
             background-position: center;
             height: 400px;
-            width: 100%;
+            width: 100%; /* Vollbreite */
             margin: 0;
             text-align: center;
             border-radius: 0;
@@ -77,7 +80,7 @@
 
         .content {
             max-width: 800px;
-            width: 100%;
+            width: 90%; /* Flexible Breite für mobile Ansicht */
             margin: 40px auto;
             padding: 20px;
             background-color: #CD9B9B;
@@ -85,7 +88,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-            flex-grow: 1; /* Sorgt dafür, dass der Inhalt den verfügbaren Platz einnimmt */
+            flex-grow: 1;
         }
 
         footer {
@@ -110,6 +113,7 @@
             .content {
                 padding: 15px;
                 margin: 20px auto;
+                width: 95%; /* Verhindert Scrollen nach links oder rechts */
             }
 
             h2 {
@@ -117,7 +121,7 @@
             }
 
             .hero {
-                height: 300px; /* Höhe reduziert für mobile Geräte */
+                height: 300px; /* Reduzierte Höhe */
             }
 
             .back-arrow {
