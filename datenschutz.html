@@ -46,7 +46,7 @@
 
         .back-arrow {
             position: absolute;
-            left: 15px;
+            left: 30px;
             top: 50%;
             transform: translateY(-50%);
             color: white;
@@ -139,6 +139,14 @@
             .back-arrow {
                 font-size: 1.2em; /* Verkleinerter Pfeil für mobile Ansicht */
                 left: 10px; /* Weniger Abstand links */
+            }
+        }
+
+        /* Desktop Ansicht */
+        @media (min-width: 769px) {
+            .back-arrow {
+                font-size: 1.5em; /* Zurück zur ursprünglichen Größe */
+                left: 30px; /* Ursprünglicher Abstand von links */
             }
         }
     </style>
