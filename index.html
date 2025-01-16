@@ -112,15 +112,16 @@
         }
 
         .about-me {
-            text-align: center;
+            text-align: left;
             margin-bottom: 40px;
         }
 
         .about-me-section {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 20px;
-            justify-content: center;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
         }
 
         .about-me-section img {
@@ -133,7 +134,6 @@
 
         .about-me-section .about-me-text {
             flex: 1;
-            text-align: center;
         }
 
         .blog-preview {
@@ -199,12 +199,13 @@
 
             .content-wrapper {
                 margin: 20px auto;
-                width: calc(100% - 30px);
+                width: calc(100% - 20px); /* Verkleinerte Breite für mobilen Viewport */
             }
 
             .about-me-section {
                 flex-direction: column; /* Bild und Text untereinander */
                 text-align: center;
+                align-items: center;
             }
 
             .about-me-section img {
