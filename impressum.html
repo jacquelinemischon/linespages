@@ -12,7 +12,7 @@
             margin: 0;
             padding: 0;
             font-family: 'Playfair Display', serif;
-            background-color: #EED5D2;
+            background-color: #EED5D2; /* Hintergrundfarbe */
             color: #333;
             overflow-x: hidden; /* Verhindert horizontales Scrollen */
         }
@@ -114,6 +114,7 @@
                 padding: 15px;
                 margin: 20px auto;
                 width: calc(100% - 30px); /* Platz für die Ränder auf kleinen Geräten */
+                text-align: center; /* Text bleibt zentriert */
             }
 
             h2 {
@@ -133,6 +134,23 @@
                 font-size: 14px; /* Schriftgröße reduziert für Lesbarkeit */
                 line-height: 1.6;
                 margin: 10px 0;
+            }
+        }
+
+        /* Desktop Ansicht */
+        @media (min-width: 769px) {
+            .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                padding: 40px;
+            }
+
+            .back-arrow {
+                font-size: 1.5em; /* Ursprüngliche Größe für Desktop */
+                left: 30px; /* Ursprünglicher Abstand für Desktop */
             }
         }
     </style>
