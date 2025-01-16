@@ -16,6 +16,7 @@
             color: #333;
             overflow-x: hidden; /* Verhindert horizontales Scrollen */
         }
+
         body {
             display: flex;
             flex-direction: column;
@@ -72,12 +73,12 @@
 
         .content {
             max-width: 800px;
-            width: 100%;
+            width: calc(100% - 40px); /* Platz für Abstände auf mobilen Geräten */
             margin: 40px auto;
             padding: 20px;
             background-color: #CD9B9B;
             color: white;
-            border-radius: 8px;
+            border-radius: 8px; /* Alle Ecken abgerundet */
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             text-align: left;
         }
@@ -109,6 +110,9 @@
         @media (max-width: 768px) {
             .content {
                 padding: 15px;
+                margin: 20px auto;
+                width: calc(100% - 30px); /* Passt die Textbox an die Bildschirmbreite an */
+                text-align: left; /* Text bleibt linksbündig */
             }
 
             .content h2 {
@@ -117,7 +121,9 @@
             }
 
             .content p {
-                font-size: 14px;
+                font-size: 14px; /* Schriftgröße reduziert für Lesbarkeit */
+                line-height: 1.6;
+                margin: 10px 0;
             }
 
             .hero {
@@ -138,6 +144,12 @@
 
         /* Desktop Ansicht */
         @media (min-width: 769px) {
+            .content {
+                max-width: 800px;
+                padding: 40px;
+                margin: 40px auto;
+            }
+
             .back-arrow {
                 font-size: 1.5em; /* Ursprüngliche Größe für Desktop */
                 left: 30px; /* Ursprünglicher Abstand für Desktop */
