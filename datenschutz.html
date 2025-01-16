@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="Datenschutz - Mein Buchblog">
     <title>Datenschutz - Lines Pages</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
@@ -12,11 +12,10 @@
             margin: 0;
             padding: 0;
             font-family: 'Playfair Display', serif;
-            background-color: #EED5D2;
+            background-color: #EED5D2; /* Hintergrundfarbe */
             color: #333;
-            overflow-x: hidden; /* Kein horizontales Scrollen */
+            overflow-x: hidden; /* Verhindert horizontales Scrollen */
         }
-
         body {
             display: flex;
             flex-direction: column;
@@ -38,7 +37,7 @@
         header, footer {
             background-color: #8B6969;
             color: white;
-            width: 100%; /* Vollbreite */
+            width: 100%; /* Nimmt die gesamte Breite ein */
             text-align: center;
             padding: 1rem;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -49,21 +48,14 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            left: 20px;
             color: white;
-            font-size: 1.5em;
             text-decoration: none;
-        }
-
-        .back-arrow:hover {
-            text-decoration: underline;
         }
 
         h2 {
             margin: 0;
             font-size: 2.5em;
             color: white;
-            text-align: center;
         }
 
         .hero {
@@ -73,12 +65,14 @@
             height: 400px;
             width: 100%; /* Vollbreite */
             margin: 0;
+            text-align: center;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            color: #fff;
         }
 
         .content {
-            max-width: 800px; /* Begrenzte Breite für Lesbarkeit */
-            width: 100%; /* Anpassung an die Bildschirmgröße */
+            max-width: 800px;
+            width: 100%;
             margin: 40px auto;
             padding: 20px;
             background-color: #CD9B9B;
@@ -138,7 +132,7 @@
 
             .back-arrow {
                 font-size: 1.2em; /* Verkleinerter Pfeil für mobile Ansicht */
-                left: 10px; /* Guter Abstand links */
+                left: 15px; /* Anpassung des linken Abstands */
             }
         }
 
@@ -155,7 +149,7 @@
 
 <header>
     <a href="index.html" class="back-arrow">← Zurück</a>
-    <h2>Datenschutz</h2>
+    <h2>Datenschutzerklärung</h2>
 </header>
 
 <div class="hero"></div>
