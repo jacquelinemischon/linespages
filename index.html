@@ -51,7 +51,7 @@
             background-image: url('websiteWallpaper.webp');
             background-size: cover;
             background-position: center;
-            padding: 50px 20px; /* Verkleinerter Hero-Bereich */
+            padding: 50px 20px;
             text-align: center;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             color: #8B6969;
@@ -98,9 +98,9 @@
 
         .content-wrapper {
             margin: 40px auto;
-            width: calc(100% - 40px); /* Platz für Abstände */
+            width: calc(100% - 40px);
             max-width: 1200px;
-            flex: 1; /* Sorgt dafür, dass der Inhalt den Platz zwischen Header und Footer füllt */
+            flex: 1;
         }
 
         .content {
@@ -121,7 +121,6 @@
             align-items: center;
             gap: 20px;
             justify-content: center;
-            flex-wrap: wrap;
         }
 
         .about-me-section img {
@@ -201,6 +200,11 @@
             .content-wrapper {
                 margin: 20px auto;
                 width: calc(100% - 30px);
+            }
+
+            .about-me-section {
+                flex-direction: column; /* Bild und Text untereinander */
+                text-align: center;
             }
 
             .about-me-section img {
