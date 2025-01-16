@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Opposites Duet & Novembers Death - Lines Pages">
+    <title>The Opposites Duet & Novembers Death - Lines Pages</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #EED5D2;
+            color: #333;
+            min-height: 100vh;
+            position: relative;
+            padding-bottom: 60px;
+            opacity: 0;
+            animation: fadeIn 0.8s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background-color: #8B6969;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .back-arrow {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5em;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .back-arrow:hover {
+            color: #CD9B9B;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #8B6969;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        .header-image {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header-image img {
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .book-list {
+            margin: 20px 0;
+        }
+
+        .book-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .book-item .book-text {
+            flex: 1;
+            text-align: left;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .book-item img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            align-self: flex-end;
+        }
+
+        .review-section {
+            margin-top: 40px;
+        }
+
+        .review-text h3 {
+            font-size: 2em;
+            color: #CD9B9B;
+        }
+
+        .review-text p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: white;
+        }
+
+        footer {
+            background-color: #8B6969;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Ansicht */
+        @media (max-width: 768px) {
+            .content {
+                padding: 15px;
+            }
+
+            .book-item {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .book-item img {
+                max-width: 100%;
+                height: auto;
+                margin: 0 auto;
+                align-self: center;
+            }
+
+            .book-item .book-text {
+                text-align: center;
+                font-size: 1.2em;
+            }
+
+            .review-section {
+                margin-top: 30px;
+            }
+
+            .review-text p {
+                text-align: center;
+            }
+
+            footer {
+                padding: 10px;
+                font-size: inherit;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="back-arrow">&#8592; <span>Zurück</span></a>
+    <h1>Lines Pages</h1>
+    <nav>
+        <a href="aktuelleRezensionen.html">Aktuelle Rezensionen</a>
+    </nav>
+</header>
+
+<div class="content">
+    <h2>The Opposites Duet & Novembers Death</h2>
+
+    <!-- Platz für ein Bild unter der Überschrift -->
+    <div class="header-image">
+        <img src="theOppositesDuet-NovembersDeathRegal.jpg" alt="The Opposites Duet & Novembers Death Regal">
+    </div>
+
+    <div class="book-list">
+
+        <!-- The Opposites Duet Abschnitt -->
+        <div class="book-item">
+            <div class="book-text">
+                <h3>"The Opposites Duet" von April G. Dark & Alectra White</h3>
+                <p>Sammelband: Dark New Adult Romance - Bad Hero Romance</p>
+            </div>
+            <img src="theOppositesDuetCover.webp" alt="The Opposites Duet Cover">
+        </div>
+
+        <!-- Like Day and Night -->
+        <div class="book-item row">
+            <div class="book-text">
+                <h3>Like Day and Night</h3>
+                <p>"Mach die Augen auf, Kleines."</p>
+                <p>Sophie kennt nur das einfache Leben in dem abgeschiedenen Haus mitten im Nirgendwo von Mississippi. Sie glaubt ihrer fanatischen und konservativen Mutter, dass die Welt ein schrecklicher Ort ist, und stellt deren Regeln nicht infrage. Cole hat schon früh gelernt, dass nichts im Leben je einfach ist. Gewalt, Selbsthass und Trauer sind seit Jahren seine ständigen Begleiter. Die Schuld, die er trägt, wiegt zu schwer, weshalb er schon lange niemanden mehr an sich ranlässt. Eine für Sophie alles verändernde Entdeckung lässt einen Wunsch in ihr wachsen, den sie nicht ignorieren kann: Sie muss wissen, wie die Welt wirklich ist. Als sie beschließt, von zu Hause wegzulaufen, und in Coles Auto einsteigt, ahnen die beiden nicht, dass die nächsten sieben Tage ihr Leben grundlegend verändern werden.</p>
+            </div>
+            <img src="likeDayAndNightCover.jpg" alt="Like Day and Night Cover">
+        </div>
+
+        <!-- Like Thunder and Lightning -->
+        <div class="book-item row">
+            <div class="book-text">
+                <h3>Like Thunder and Lightning</h3>
+                <p>Heim, Pflegeeltern, Heim, Pflegeeltern, Heim. Nach der achten Familie habe ich aufgehört, sie zu zählen, und mich damit abgefunden, dass ich nur mich habe. Bis ich meine eigene kleine Familie in Form eines ungezogenen Giftzwergs fand, der genauso verloren in dieser Welt war wie ich. Coles Kindheit ist geprägt von Unbeständigkeit, seine Jugend ein Spießrutenlauf. Er kämpft sich durch ein Leben, in dem es das Schicksal nur selten gut mit ihm meint, und lernt dabei auf die harte Tour, dass nichts im Leben je einfach ist. Erst, als er Jules findet, erfährt er, was es bedeutet, bedingungslos geliebt zu werden.</p>
+            </div>
+            <img src="likeThunderAndLightningCover.jpg" alt="Like Thunder and Lightning Cover">
+        </div>
+
+        <!-- Like Fire and Ice -->
+        <div class="book-item row">
+            <div class="book-text">
+                <h3>Like Fire and Ice</h3>
+                <p>"Wir wären füreinander durchs Feuer gegangen. Bis einer von uns beschloss, dass das nicht mehr reicht, und er dem anderen damit das Herz brach."</p>
+                <p>Ich sollte nicht hier sein. Ich will nicht hier sein, und doch muss ich es. Ich musste nach Mississippi zurückkommen. Dorthin, wo ich aufgewachsen bin und beinah 18 Jahre lang kein richtiges Leben hatte. Wo ich lernte, wie diese Welt wirklich ist, nachdem meine Mutter immer versucht hatte, genau das zu verhindern. Wo ich ihn traf und mich hoffnungslos verliebte. Wo er mir das Herz gebrochen hat und ich letztendlich nicht mehr bleiben konnte, weil der Verlust seiner Liebe zu schwer wog. Ich muss zurück zu dem Ort, an dem Cole lebt, auch wenn es das Letzte ist, was ich tun will.</p>
+            </div>
+            <img src="likeFireAndIceCover.jpg" alt="Like Fire and Ice Cover">
+        </div>
+
+        <!-- Rezension für "The Opposites Duet" -->
+        <div class="review-section">
+            <div class="review-text">
+                <h3>Rezension</h3>
+                <p>Definitiv #TeamCole! Ach, ich weiß gar nicht, wie ich anfangen soll! Ich habe die beiden von Anfang an so geliebt und die Story heißt nicht umsonst "The Opposites Duet". Unterschiedlicher könnten Cole und Sophie gar nicht sein. So oft habe ich gelacht, geweint, war auch mal sauer und hab die Dilogie und die Novelle so schnell inhaliert! Gerade Band 2 hat mich so zerstört, dass ich nicht mehr genügend Taschentücher hatte. Definitiv etwas, was ich nächstes Jahr re-readen werde!<br>"Während ich in dem Grau seiner Augen versinke, wird mir klar, dass ich mich in Cole Walker verliebt habe".</p>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- Novembers Death Abschnitt -->
+        <div class="book-item">
+            <div class="book-text">
+                <h3>"Novembers Death" von April G. Dark & Alectra White</h3>
+                <p>Sammelband: Dark Romance - Bad & Broken Alpha Hero, Age gap, kinky, found family<br>Dante ist ein Mann mit ganz eigenen Moralvorstellungen. Skrupellos. Eiskalt. Der Beste in dem, was er tut. Sein neuster Auftrag: November, die Tochter des Senatorenkandidaten, zu ermorden. Als er jedoch beobachtet, dass sie sich umbringen will, kann er nicht anders, als sie davon abzuhalten und mitzunehmen. Mit allen Mitteln versucht er, ihren Überlebenswillen zu wecken. Die Anziehungskraft, die dabei zwischen den beiden entsteht, wird zu einem Kampf aus dunklem Begehren, Verzweiflung und Macht. Denn November braucht Dantes Brutalität, doch er verbietet es sich, ihr gegenüber hart zu sein. Aber kann eine Frau, die sterben wollte, ausgerechnet bei ihrem Mörder sicher sein? Und wie gefährlich ist es, sich in ein Monster zu verlieben?</p>
+            </div>
+            <img src="novembersDeathCover.webp" alt="Novembers Death Cover">
+        </div>
+
+        <!-- Zusätzliche Abschnitte unter Novembers Death -->
+        <!-- Abschnitt 1 -->
+        <div class="book-item row">
+            <div class="book-text">
+                <h3>The Shadows of Tears and Silence</h3>
+                <h3>Dante</h3>
+                <p>Mein Auftrag lautet, sie zu töten. Aber alles in mir will, dass sie lebt.</p>
+                <h3>November</h3>
+                <p>Ich wollte sterben. Doch in ihm fand ich etwas, das mich leben lassen will.</p>
+            </div>
+            <img src="theShadesOfTearsAndSilenceCover.jpg" alt="The Shades of Tears and Silence Cover">
+        </div>
+
+        <!-- Abschnitt 2 -->
+        <div class="book-item row">
+            <div class="book-text">
+                <h3>The Blaze of Love and Violence</h3>
+                <h3>Dante</h3>
+                <p>Sie musste verschwinden. Nur so können die Monster, die hinter ihr her sind, sie nicht mehr finden.</p>
+                <h3>November</h3>
+                <p>Monster werden von anderen erschaffen. Und er hat mich erschaffen.</p>
+            </div>
+            <img src="theBlazeOfLoveAndViolenceCover.jpg" alt="The Blaze of Love and Violence">
+        </div>
+
+        <!-- Abschnitt 3 -->
+        <div class="book-item row">
+            <div class="book-text">
+                <h3>The Pain of Truth and Revenge</h3>
+                <h3>Dante</h3>
+                <p>Ich werde dich zerstören.</p>
+                <h3>November</h3>
+                <p>Ich werde nicht aufhören, dich zu lieben.</p>
+            </div>
+            <img src="thePainOfTruthAndRevengeCover.jpg" alt="The Pain of Truth and Revenge Cover">
+        </div>
+
+        <!-- Abschnitt 4 -->
+        <div class="book-item row">
+            <div class="book-text">
+                <h3>The Art of Hate and Insistence</h3>
+                <h3>Dante</h3>
+                <p>Er ist hitzköpfig, stur und impulsiv. Und ich kann ihn nicht ausstehen.</p>
+                <h3>Cole</h3>
+                <p>Er ist gefährlich, arrogant und hat Leichen im Keller. Und ich werde jede einzelne davon ausgraben.</p>
+            </div>
+            <img src="theArtOfHatAndInsistenceCover.jpg" alt="The Art of Hate and Insistence Cover">
+        </div>
+
+        <!-- Abschnitt 5 -->
+        <div class="book-item row">
+            <div class="book-text">
+                <h3>The Opposite of Death</h3>
+                <p>Weihnachtsspecial zu The Opposites Duet und Novembers Death!</p>
+            </div>
+            <img src="theOppositeOfDeathCover.jpg" alt="The Opposite of Death Cover">
+        </div>
+
+        <hr class="divider">
+
+        <!-- Rezension für "Novembers Death" -->
+        <div class="review-section">
+            <div class="review-text">
+                <h3>Rezension</h3>
+                <p>Dante und November (Winter) sind für mich das Paar, welches ich wie Cole und Sophie nicht mehr vergessen werde. Von Seite 1 an wurde ich direkt in die Story gerissen und ich konnte nicht mehr aufhören, was auch dem flüssigen Schreibstil zu verdanken ist. Es wird krank, blutig und sehr emotional. Es gab so viel Spannung und genau das richtige Maß an Spice... sehr gutem Spice! Triggerwarnungen unbedingt beachten!<br>"'Ich liebe dich' ist so ausgelutscht. Alle werfen damit um sich, als wäre es Konfetti, dabei meinen die meisten es nicht mal wirklich so. Und so schrecklich schwach... Also nein, ich liebe dich nicht. Ich würde die Menschheit für dich ausrotten, Winter. Ich würde für dich bis ans Ende der Welt gehen und jeden, der dich nur ansieht, in Stücke reißen... Wonach auch immer du verlangst, ich werde es dir geben. Alles. Wenn du wirklich ein 'Ich liebe dich' von mir hören willst, muss ich dich enttäuschen. Denn für das, was ich empfinde, reichen diese Worte nicht aus. Nicht einmal ansatzweise."</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Line's Pages | <a href="index.html">Zurück zur Startseite</a> | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+</footer>
+
+</body>
+</html>

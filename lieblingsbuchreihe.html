@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dark Castle, D. C. Odesza - Lines Pages">
+    <title>Dark Castle, D. C. Odesza - Lines Pages</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #EED5D2;
+            color: #333;
+            min-height: 100vh;
+            position: relative;
+            padding-bottom: 60px;
+            opacity: 0; /* Start mit Transparenz */
+            animation: fadeIn 0.8s ease-in-out forwards; /* Einblendungseffekt */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background-color: #8B6969;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .back-arrow {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 1.5em;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .back-arrow:hover {
+            text-decoration: underline;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: white;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #8B6969;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        .series-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .series-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .series-image img {
+            max-width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .series-description {
+            flex: 2;
+        }
+
+        .series-description p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .series-right-image {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .series-right-image .text {
+            flex: 2;
+        }
+
+        .series-right-image img {
+            flex: 1;
+            max-width: 400px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .series-right-image .text p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #8B6969;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Ansicht */
+        @media (max-width: 768px) {
+            .series-info,
+            .series-right-image {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .series-image img,
+            .series-right-image img {
+                max-width: 90%;
+            }
+
+            .series-description,
+            .series-right-image .text {
+                text-align: center;
+            }
+
+            .content h2 {
+                font-size: 2em;
+            }
+
+            .series-description p,
+            .series-right-image .text p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="back-arrow">← Zurück</a>
+    <h1>Lines Pages</h1>
+    <nav>
+        <a href="aktuelleRezensionen.html">Aktuelle Rezensionen</a>
+    </nav>
+</header>
+
+<div class="content">
+    <h2>Dark Castle, D. C. Odesza</h2>
+    <div class="series-info">
+        <div class="series-image">
+            <img src="darkCastleReihe.jpg" alt="Dark Castle-Reihe Cover">
+        </div>
+        <div class="series-description">
+            <h3>Empfehlung ab 18 Jahren!</h3>
+            <p>Meine absolute Lieblingsbuchreihe ist die "Dark Castle"-Reihe von D. C. Odesza. Mit dieser Reihe bin ich endgültig dem Dark Romance-Genre verfallen und habe die ersten sechs Bände in einer Woche durchgelesen.</p>
+            <p>Gefangen in einem dunklen Schloss auf einer Insel. Jemand, der seine Rache nehmen will. Und eine Frau, die fünf Männern die Stirn bietet. Dunkle Reverse-Harem Reihe mit Thriller-Elementen und enorm viel Spice!</p>
+        </div>
+    </div>
+
+    <div class="series-right-image">
+        <div class="text">
+            <h3>Warum ich diese Buchreihe liebe</h3>
+            <p>Der Schreibstil der Autorin ist sehr flüssig, weshalb ich regelrecht durch die Geschichten geflogen bin. Absolut spannend, richtig guter Spice und unerwartete Wendungen! In den (bisher) acht Bänden ist so viel passiert, mit dem ich gar nicht gerechnet hätte. Es ist bekannt, dass noch zwei weitere Teile erscheinen werden und ich kann es kaum erwarten, wie die Story nach Band acht weitergeht.</p>
+            <p>Ich liebe diese Reihe und jeden einzelnen Lord. Die Farbschnitte der Reihe sind absolut wunderschön in meinem Regal!</p>
+        </div>
+        <img src="darkCastleRegal.jpg" alt="Dark Castle-Reihe Regal">
+    </div>
+
+    <div class="series-description">
+        <h3>Meine Lieblingsmomente</h3>
+        <p>"Jedes Girl braucht ein Monster mit Klauen und Reißzähnen, das es nachts vor anderen Ungeheuern beschützt. Wollen wir nicht alle das fucking Monster, das nur uns liebt?"</p>
+        <p>"Keine Sorge Vögelchen, ich habe nicht vor draufzugehen, sondern dich zu heiraten!"</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Line's Pages | <a href="index.html">Zurück zur Startseite</a> | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+</footer>
+
+</body>
+</html>

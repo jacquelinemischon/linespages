@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aktuelle Rezensionen - Line's Pages">
+    <title>Aktuelle Rezensionen - Lines Pages</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #EED5D2;
+            color: #333;
+            min-height: 100vh;
+            position: relative;
+            padding-bottom: 60px;
+            opacity: 0;
+            animation: fadeIn 0.8s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background-color: #8B6969;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .back-arrow {
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+
+        .back-arrow:hover {
+            text-decoration: underline;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #8B6969;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        .book-list {
+            margin: 20px 0;
+        }
+
+        .book-item {
+            margin-bottom: 80px;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #CD9B9B;
+            margin: 40px 0;
+        }
+
+        .book-images {
+            margin-bottom: 20px;
+        }
+
+        .book-images img {
+            max-width: 350px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: block;
+        }
+
+        .book-item h3 {
+            font-size: 1.8em;
+            color: #CD9B9B;
+            margin-bottom: 10px;
+        }
+
+        .book-item p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .book-item p.bold {
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #8B6969;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            .content {
+                padding: 10px;
+            }
+
+            .content h2 {
+                font-size: 2em;
+            }
+
+            .book-images img {
+                max-width: 100%;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .book-item h3 {
+                font-size: 1.5em;
+            }
+
+            .book-item p {
+                font-size: 1em;
+            }
+
+            nav a {
+                font-size: 0.9em;
+            }
+
+            .back-arrow {
+                font-size: 1.2em;
+                left: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="back-arrow">← Zurück</a>
+    <h1>Line's Pages</h1>
+</header>
+
+<div class="content">
+    <h2>Aktuelle Rezensionen</h2>
+    <div class="book-list">
+        <div class="book-item">
+            <h3>Gefesselt - Der Sklavenaufstand von Enrico Schnitzer</h3>
+            <div class="book-images">
+                <img src="gefesseltBand3Cover.jpg" alt="Gefesselt - Der Sklavenaufstand Cover">
+            </div>
+            <p class="bold">Willkommen im Zoo der wilden Tiere!</p>
+            <p>Ich hätte ja nie gedacht, dass es mal so kommen wird, aber diese Reihe hat mich viel mehr als nur gefesselt! Die Geschichte von Lucca und Leon wird immer herzergreifender und ich fühlte jede Szene so sehr mit. Die Beschreibungen und Wortwahl des Autors sind so dermaßen gut gewählt und getroffen, dass es sich jedes Mal so anfühlt, als wäre ich live dabei. Mit dem Ende hätte ich nicht unbedingt gerechnet, aber mein Puls war bei 112... denn es war mal wieder eine Achterbahnfahrt der Gefühle und die Ereignisse haben sich nur so überschlagen.</p>
+            <p>Ich freue mich so auf all die anderen Teile und was mich im "Zoo der wilden Tiere" noch so erwartet.</p>
+        </div>
+        <hr>
+        <div class="book-item">
+            <h3>Entführt - Bis du mich liebst von D. C. Odesza</h3>
+            <div class="book-images">
+                <img src="entfuehrtBisDuMichLiebstCover.jpg" alt="Entführt - Bis du mich liebst Cover">
+            </div>
+            <p class="bold">Komm, sei meine Muse.</p>
+            <p>Wie immer ein Meisterwerk von D. C. Odesza. Wir begleiten Jane, die als Escortdame arbeitet und die Chevalier Brüder kennenlernt. Sie platzt in das Atelier von einem der Brüder und schon sind wir mittendrin. Odesza's Bücher machen süchtig und man kann sie nicht aus der Hand legen. Wieder ein Werk, das ich an einem Tag durchgelesen habe.</p>
+            <p>Ich freue mich sehr, auf die anderen drei Teile, die zum Glück schon in meinem Regal auf mich warten!</p>
+        </div>
+        <hr>
+        <div class="book-item">
+            <h3>Gefesselt - Der Aufstieg des Saphirs von Enrico Schnitzer</h3>
+            <div class="book-images">
+                <img src="gefesseltBand2Cover.jpg" alt="Gefesselt Band 2 Cover">
+            </div>
+            <p class="bold">Ich konnte nichts mehr gegen meine Tränen tun... - <a href="https://www.tiktok.com/@linesbooktok/video/7458270886316100886" target="_blank">LIVE REACTION AUF TIKTOK!</a></p>
+            <p>Noch nie... und wirklich... NOCH NIE!!! habe ich so während eines Buches geflennt. Emotion pur, ich habe so viele Gefühle gefühlt. Die Geschichte von Lucca und Leon ist so herzergreifend und die beiden sind mit Abstand mein liebstes "Pärchen".</p>
+            <p>Spicy, süß, wörtwortlich fesselnd.</p>
+        </div>
+        <hr>
+        <div class="book-item">
+            <h3>Obsessed - Bis du mich liebst von Don Both und Maria O'Hara</h3>
+            <div class="book-images">
+                <img src="obsessedCoverEbook.jpg" alt="Obsessed Cover E-Book">
+            </div>
+            <p class="bold">Ich bin wie im Rausch - mit Mister Rush. Wie passend.</p>
+            <p>Die Story hat mich oft zum Schmunzeln gebracht und vor allem die Spice-Szenen haben mir sehr gut gefallen! Erotisch und düster. Der Stalker-Trope wurde hier sehr gut umgesetzt. Keaton ist eine red flag auf zwei (oder drei) Beinen, aber wir sind Dark Romance-Leser...</p>
+            <p>also, wen interessiert's? ;)</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Line's Pages | <a href="index.html">Zurück zur Startseite</a> | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+</footer>
+
+</body>
+</html>
