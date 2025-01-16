@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Impressum - Buchbloggerin auf TikTok">
     <title>Impressum - Line's Pages</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
@@ -16,7 +16,6 @@
             color: #333;
             opacity: 0;
             animation: fadeIn 0.8s ease-in-out forwards;
-            overflow-x: hidden; /* Verhindert horizontales Scrollen */
         }
 
         @keyframes fadeIn {
@@ -41,21 +40,27 @@
             text-align: center;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
             position: relative;
-            width: 100%;
         }
 
         .back-arrow {
             position: absolute;
+            left: 20px;
             top: 50%;
             transform: translateY(-50%);
             color: white;
+            font-size: 1.5em;
             text-decoration: none;
+        }
+
+        .back-arrow:hover {
+            text-decoration: underline;
         }
 
         h2 {
             margin: 0;
             font-size: 2.5em;
             color: white;
+            text-align: center; /* Mittig ausgerichtet */
         }
 
         .hero {
@@ -80,8 +85,7 @@
             color: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            flex: 1;
-            overflow-y: auto;
+            overflow: visible; /* Keine Scrollbars innerhalb des Textfelds */
             text-align: center;
         }
 
@@ -91,6 +95,11 @@
             text-align: center;
             padding: 10px;
             width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            text-align: center; /* Zentrierter Footer-Text */
         }
 
         footer a {
@@ -106,10 +115,12 @@
         @media (max-width: 768px) {
             .content {
                 padding: 15px;
+                margin: 20px auto; /* Mehr Abstand für kleine Bildschirme */
             }
 
             h2 {
                 font-size: 2em;
+                text-align: center; /* Mittig für mobile Geräte */
             }
 
             .hero {
@@ -117,22 +128,14 @@
             }
 
             .back-arrow {
-                font-size: 1.2em; /* Verkleinerte Pfeilgröße */
-                left: 15px; /* Ausreichender Abstand links */
+                font-size: 1.2em;
+                left: 10px; /* Weniger Abstand auf kleinen Geräten */
             }
 
             .content p {
                 font-size: 14px; /* Schriftgröße reduziert für Lesbarkeit */
                 line-height: 1.6;
                 margin: 10px 0;
-            }
-        }
-
-        /* Desktop Ansicht */
-        @media (min-width: 769px) {
-            .back-arrow {
-                font-size: 1.5em; /* Ursprüngliche Größe für Desktop */
-                left: 20px; /* Ursprünglicher Abstand für Desktop */
             }
         }
     </style>
@@ -152,7 +155,7 @@
     <p>Sonneborner Straße 28, 99869 Nessetal</p>
     <p>Telefon: 0176 63642036</p>
     <p>E-Mail: <a href="mailto:jacquelinemischon@yahoo.com" style="color: white;">jacquelinemischon@yahoo.com</a></p>
-    <p>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV: Jacqueline Mischón</p>
+    <p>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>Jacqueline Mischón</p>
 </div>
 
 <footer>
