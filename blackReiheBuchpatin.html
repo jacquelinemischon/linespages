@@ -76,14 +76,11 @@
             margin: 20px 0;
         }
 
-        .book-item img {
-            flex: 1;
-            max-width: 250px;
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            align-self: flex-end; /* Bild bündig zum Textende ausrichten */
+        .book-item {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            margin-bottom: 40px;
         }
 
         .book-item .book-text {
@@ -131,7 +128,12 @@
 
         /* Mobile Ansicht */
         @media (max-width: 768px) {
+            body {
+                overflow-x: hidden; /* Kein horizontales Scrollen in mobiler Ansicht */
+            }
+
             .content {
+                max-width: 100%; /* Verhindert Überschreitung des Viewports */
                 padding: 10px;
             }
 
@@ -146,7 +148,7 @@
             }
 
             .book-item img {
-                max-width: 60%; /* Verkleinerte Bilder für mobile Ansicht */
+                max-width: 80%; /* Verkleinerte Bilder für mobile Ansicht */
                 margin: 15px 0;
                 height: auto; /* Verhindert Verzerrung */
             }
