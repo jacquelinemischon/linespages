@@ -13,11 +13,9 @@
             padding: 0;
             background-color: #EED5D2;
             color: #333;
-            min-height: 100vh;
-            position: relative;
-            padding-bottom: 60px;
-            opacity: 0;
-            animation: fadeIn 0.8s ease-in-out forwards;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Gesamte Viewport-Höhe */
         }
 
         @keyframes fadeIn {
@@ -35,7 +33,6 @@
             padding: 1rem;
             text-align: center;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-            position: relative;
         }
 
         .back-arrow {
@@ -67,6 +64,7 @@
         }
 
         .content {
+            flex: 1; /* Hauptinhalt nimmt den gesamten Platz ein */
             max-width: 1200px;
             margin: 40px auto;
             padding: 20px;
@@ -141,11 +139,8 @@
             color: white;
             text-align: center;
             padding: 10px 20px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            left: 0;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2)
+            width: 100%; /* Maximale Breite */
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
         }
 
         footer a {
