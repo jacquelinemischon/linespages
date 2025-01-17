@@ -78,7 +78,7 @@
         .book-item {
             display: flex;
             gap: 20px;
-            align-items: flex-start; /* Bilder und Text am oberen Rand ausrichten */
+            align-items: flex-start;
             margin-bottom: 40px;
         }
 
@@ -89,7 +89,7 @@
         .book-item img {
             flex: 1;
             max-width: 250px;
-            width: auto;
+            width: 100%;
             height: auto;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -128,17 +128,18 @@
         /* Mobile Ansicht */
         @media (max-width: 768px) {
             .book-item {
-                flex-direction: column;
+                flex-direction: column; /* Bilder unter Text */
                 align-items: center;
             }
 
             .book-item img {
-                max-width: 60%; /* Bilder für die mobile Ansicht kleiner */
-                margin: 15px auto; /* Zentrierung */
+                max-width: 80%; /* Verkleinerte Bilder für mobile Ansicht */
+                margin: 15px 0;
+                height: auto; /* Verhindert Verzerrung */
             }
 
             .book-item .book-text {
-                text-align: center;
+                text-align: center; /* Text zentriert */
             }
 
             .content {
