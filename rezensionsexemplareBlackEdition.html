@@ -36,11 +36,14 @@
             text-align: center;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .back-arrow {
             position: absolute;
-            left: 30px;
+            left: 15px;
             top: 50%;
             transform: translateY(-50%);
             color: white;
@@ -186,13 +189,19 @@
                 padding: 10px;
                 font-size: 0.9em;
             }
+
+            .back-arrow {
+                font-size: 1.2em; /* Anpassung der Größe des Pfeils */
+                left: 10px; /* Abstand links verringert */
+                top: 50%; /* Zentriert im Header */
+                transform: translateY(-50%);
+            }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <!-- Zurück zur Startseite -->
     <a href="index.html" class="back-arrow">← Zurück</a>
     <h1>Lines Pages</h1>
     <nav>
