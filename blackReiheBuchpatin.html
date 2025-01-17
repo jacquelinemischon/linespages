@@ -16,7 +16,7 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            overflow-x: hidden; /* Kein horizontales Scrollen */
+            overflow-x: hidden; /* Kein Scrollen nach rechts */
         }
 
         header {
@@ -31,7 +31,7 @@
         .back-arrow {
             position: absolute;
             left: 10px; /* Pfeil linksbündig positioniert */
-            top: 50%;
+            top: 50%; /* Vertikal zentriert */
             transform: translateY(-50%);
             font-size: 1.5em;
             color: white;
@@ -50,6 +50,7 @@
             color: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
         }
 
         .content h2 {
@@ -58,6 +59,41 @@
             margin-bottom: 20px;
             color: white;
             text-shadow: 2px 2px 4px black;
+        }
+
+        .book-list {
+            margin: 20px 0;
+        }
+
+        .book-item {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
+        .book-item .book-text {
+            flex: 2;
+        }
+
+        .book-item img {
+            flex: 1;
+            max-width: 250px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .book-item p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .book-item h3 {
+            font-size: 1.8em;
+            color: #CD9B9B;
         }
 
         footer {
@@ -80,25 +116,44 @@
 
         /* Mobile Ansicht */
         @media (max-width: 768px) {
-            body {
-                overflow-x: hidden; /* Wichtig: verhindert horizontales Scrollen */
-            }
-
             .content {
-                max-width: 100%; /* Nutzt die komplette Breite */
-                margin: 20px auto;
-                padding: 15px;
-                box-sizing: border-box; /* Verhindert Breite > 100% */
-                border-radius: 8px; /* Beibehaltung der Abrundungen */
+                width: calc(100vw - 20px); /* Passt die Breite an, um Padding zu berücksichtigen */
+                margin: 20px auto; /* Horizontale Zentrierung */
+                padding: 10px; /* Weniger Padding für kleinere Bildschirme */
+                border-radius: 8px; /* Abrundungen bleiben erhalten */
             }
 
             .content h2 {
                 font-size: 2em;
             }
 
-            footer {
-                padding: 10px;
-                font-size: 0.9em;
+            .book-item {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .book-item img {
+                max-width: 50%; /* Bilder sind jetzt maximal 50% breit */
+                margin: 15px 0;
+                height: auto;
+            }
+
+            .book-item .book-text {
+                text-align: center;
+            }
+
+            .book-item h3 {
+                font-size: 1.5em;
+            }
+
+            .book-item p {
+                font-size: 1em;
+            }
+
+            .back-arrow {
+                font-size: 1.2em;
+                left: 10px;
             }
         }
     </style>
