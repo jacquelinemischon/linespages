@@ -38,15 +38,15 @@
             padding: 1rem;
             text-align: center;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
         }
 
         .back-arrow {
             position: absolute;
-            left: 30px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: white;
+            left: 10px; /* Pfeil links platzieren */
+            top: 10px; /* Pfeil oben ausrichten */
             font-size: 1.5em;
+            color: white;
             text-decoration: none;
         }
 
@@ -131,10 +131,10 @@
             color: white;
             text-align: center;
             padding: 10px;
-            width: 100%; /* Breite des Footers anpassen */
-            box-sizing: border-box; /* Padding in die Breite einrechnen */
+            width: 100%;
+            box-sizing: border-box;
             position: relative;
-            left: 0; /* Sicherstellen, dass der Footer bündig links beginnt */
+            left: 0;
         }
 
         footer a {
@@ -157,9 +157,9 @@
             }
 
             .book-images img {
-                max-width: 200px; /* Kleinere Bilder für die mobile Ansicht */
+                max-width: 200px;
                 height: auto;
-                margin: 0 auto; /* Zentriert die Bilder */
+                margin: 0 auto;
                 border-radius: 8px;
                 box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             }
@@ -177,8 +177,7 @@
             }
 
             .back-arrow {
-                font-size: 1em; /* Verkleinerung des Pfeils */
-                left: 10px; /* Ausrichtung näher am Rand */
+                font-size: 1.2em; /* Verkleinerung des Pfeils */
             }
         }
     </style>
