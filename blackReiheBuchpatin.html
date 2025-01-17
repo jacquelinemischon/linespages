@@ -16,6 +16,7 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            overflow-x: hidden; /* Kein horizontales Scrollen */
         }
 
         header {
@@ -127,6 +128,14 @@
 
         /* Mobile Ansicht */
         @media (max-width: 768px) {
+            .content {
+                padding: 10px;
+            }
+
+            .content h2 {
+                font-size: 2em;
+            }
+
             .book-item {
                 flex-direction: column; /* Bilder unter Text */
                 align-items: center;
@@ -134,7 +143,7 @@
             }
 
             .book-item img {
-                max-width: 70%; /* Verkleinerte Bilder für mobile Ansicht */
+                max-width: 60%; /* Verkleinerte Bilder für mobile Ansicht */
                 margin: 15px 0;
                 height: auto; /* Verhindert Verzerrung */
             }
@@ -143,12 +152,12 @@
                 text-align: center; /* Text zentriert */
             }
 
-            .content {
-                padding: 10px;
+            .book-item h3 {
+                font-size: 1.5em;
             }
 
-            .content h2 {
-                font-size: 2em;
+            .book-item p {
+                font-size: 1em;
             }
 
             .back-arrow {
