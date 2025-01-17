@@ -76,11 +76,14 @@
             margin: 20px 0;
         }
 
-        .book-item {
-            display: flex;
-            gap: 20px;
-            align-items: flex-start;
-            margin-bottom: 40px;
+        .book-item img {
+            flex: 1;
+            max-width: 250px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            align-self: flex-end; /* Bild bündig zum Textende ausrichten */
         }
 
         .book-item .book-text {
