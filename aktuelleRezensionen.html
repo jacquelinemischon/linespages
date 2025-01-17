@@ -7,6 +7,7 @@
     <title>Aktuelle Rezensionen - Line's Pages</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        /* Basis-Layout */
         html, body {
             margin: 0;
             padding: 0;
@@ -32,6 +33,7 @@
             }
         }
 
+        /* Header */
         header {
             background-color: #8B6969;
             color: white;
@@ -39,14 +41,14 @@
             text-align: center;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
             position: relative;
-            display: flex; /* Flexbox für Pfeil und Text */
+            display: flex;
             align-items: center;
-            justify-content: center; /* Text in der Mitte */
+            justify-content: center;
         }
 
         .back-arrow {
             position: absolute;
-            left: 30px; /* Platzierung links */
+            left: 30px;
             color: white;
             font-size: 1.5em;
             text-decoration: none;
@@ -67,6 +69,7 @@
             text-decoration: underline;
         }
 
+        /* Hauptinhalt */
         .content {
             max-width: 1200px;
             margin: 40px auto;
@@ -86,31 +89,8 @@
             text-shadow: 2px 2px 4px black;
         }
 
-        .book-list {
-            margin: 20px 0;
-        }
-
         .book-item {
             margin-bottom: 80px;
-        }
-
-        hr {
-            border: 0;
-            height: 1px;
-            background: #CD9B9B;
-            margin: 40px 0;
-        }
-
-        .book-images {
-            margin-bottom: 20px;
-        }
-
-        .book-images img {
-            max-width: 350px;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            display: block;
         }
 
         .book-item h3 {
@@ -124,19 +104,30 @@
             line-height: 1.6;
         }
 
-        .book-item p.bold {
-            font-weight: bold;
+        .book-images img {
+            max-width: 350px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: block;
         }
 
+        hr {
+            border: 0;
+            height: 1px;
+            background: #CD9B9B;
+            margin: 40px 0;
+        }
+
+        /* Footer */
         footer {
             background-color: #8B6969;
             color: white;
             text-align: center;
             padding: 10px;
-            width: 100%; /* Breite des Footers anpassen */
-            box-sizing: border-box; /* Padding in die Breite einrechnen */
-            position: relative;
-            left: 0; /* Sicherstellen, dass der Footer bündig links beginnt */
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: auto; /* Positioniert Footer am Ende */
         }
 
         footer a {
@@ -159,11 +150,7 @@
             }
 
             .book-images img {
-                max-width: 200px; /* Kleinere Bilder für die mobile Ansicht */
-                height: auto;
-                margin: 0 auto; /* Zentriert die Bilder */
-                border-radius: 8px;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                max-width: 200px;
             }
 
             .book-item h3 {
@@ -179,8 +166,8 @@
             }
 
             .back-arrow {
-                font-size: 1.2em; /* Verkleinerung des Pfeils */
-                left: 20px; /* Ausrichtung näher am Rand */
+                font-size: 1.2em;
+                left: 20px;
             }
         }
     </style>
