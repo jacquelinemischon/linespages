@@ -20,9 +20,6 @@
         }
 
         header {
-            display: flex; /* Flexbox zur Anordnung von Pfeil und Titel */
-            align-items: center; /* Vertikale Zentrierung */
-            justify-content: center; /* Titel mittig ausrichten */
             background-color: #8B6969;
             color: white;
             padding: 1rem;
@@ -33,7 +30,9 @@
 
         .back-arrow {
             position: absolute;
-            left: 10px; /* Abstand vom linken Rand */
+            left: 10px; /* Pfeil linksbündig positioniert */
+            top: 50%; /* Vertikal zentriert */
+            transform: translateY(-50%);
             font-size: 1.5em;
             color: white;
             text-decoration: none;
