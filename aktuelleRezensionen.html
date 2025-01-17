@@ -36,15 +36,14 @@
             background-color: #8B6969;
             color: white;
             padding: 1rem;
-            text-align: center;
+            display: flex;
+            align-items: center; /* Zentriert die Inhalte vertikal */
+            justify-content: flex-start; /* Lässt den Pfeil links */
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         }
 
         .back-arrow {
-            position: absolute;
-            left: 30px;
-            top: 50%;
-            transform: translateY(-50%);
+            margin-right: 15px; /* Abstand zwischen Pfeil und Titel */
             color: white;
             font-size: 1.5em;
             text-decoration: none;
@@ -84,48 +83,6 @@
             text-shadow: 2px 2px 4px black;
         }
 
-        .book-list {
-            margin: 20px 0;
-        }
-
-        .book-item {
-            margin-bottom: 80px;
-        }
-
-        hr {
-            border: 0;
-            height: 1px;
-            background: #CD9B9B;
-            margin: 40px 0;
-        }
-
-        .book-images {
-            margin-bottom: 20px;
-        }
-
-        .book-images img {
-            max-width: 350px;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            display: block;
-        }
-
-        .book-item h3 {
-            font-size: 1.8em;
-            color: #CD9B9B;
-            margin-bottom: 10px;
-        }
-
-        .book-item p {
-            font-size: 1.2em;
-            line-height: 1.6;
-        }
-
-        .book-item p.bold {
-            font-weight: bold;
-        }
-
         footer {
             background-color: #8B6969;
             color: white;
@@ -145,48 +102,12 @@
         footer a:hover {
             text-decoration: underline;
         }
-
-        /* Mobile Optimization */
-        @media (max-width: 768px) {
-            .content {
-                padding: 10px;
-            }
-
-            .content h2 {
-                font-size: 2em;
-            }
-
-            .book-images img {
-                max-width: 200px; /* Kleinere Bilder für die mobile Ansicht */
-                height: auto;
-                margin: 0 auto; /* Zentriert die Bilder */
-                border-radius: 8px;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            }
-
-            .book-item h3 {
-                font-size: 1.5em;
-            }
-
-            .book-item p {
-                font-size: 1em;
-            }
-
-            nav a {
-                font-size: 0.9em;
-            }
-
-            .back-arrow {
-                font-size: 1em; /* Verkleinerung des Pfeils */
-                left: 10px; /* Ausrichtung näher am Rand */
-            }
-        }
     </style>
 </head>
 <body>
 
 <header>
-    <a href="index.html" class="back-arrow">← Zurück</a>
+    <a href="index.html" class="back-arrow">←</a>
     <h1>Line's Pages</h1>
 </header>
 
