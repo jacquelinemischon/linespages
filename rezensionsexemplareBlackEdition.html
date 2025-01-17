@@ -16,6 +16,7 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            overflow-x: hidden; /* Kein horizontales Scrollen */
         }
 
         body {
@@ -79,6 +80,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             flex-grow: 1; /* Flexbox: Inhalt wächst, um Platz zu füllen */
+            overflow: hidden; /* Zusätzlicher Schutz vor Überlauf */
         }
 
         .content h2 {
@@ -126,7 +128,7 @@
         }
 
         .book-images img {
-            max-width: 350px;
+            max-width: 100%; /* Verhindert Überlauf */
             height: auto;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -181,7 +183,7 @@
             }
 
             .book-images img {
-                max-width: 100%;
+                max-width: 100%; /* Vollständige Breite für Mobile */
                 margin-bottom: 15px;
             }
 
