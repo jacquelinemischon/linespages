@@ -20,6 +20,9 @@
         }
 
         header {
+            display: flex; /* Flexbox zur Anordnung von Pfeil und Titel */
+            align-items: center; /* Vertikale Zentrierung */
+            justify-content: center; /* Titel mittig ausrichten */
             background-color: #8B6969;
             color: white;
             padding: 1rem;
@@ -30,11 +33,9 @@
 
         .back-arrow {
             position: absolute;
-            left: 30px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: white;
+            left: 10px; /* Abstand vom linken Rand */
             font-size: 1.5em;
+            color: white;
             text-decoration: none;
         }
 
@@ -145,7 +146,7 @@
             .book-item img {
                 max-width: 50%; /* Bilder sind jetzt maximal 50% breit */
                 margin: 15px 0;
-                height: auto; /* Verhindert Verzerrung */
+                height: auto;
             }
 
             .book-item .book-text {
@@ -162,7 +163,7 @@
 
             .back-arrow {
                 font-size: 1.2em;
-                left: 15px;
+                left: 10px;
             }
         }
     </style>
