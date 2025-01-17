@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Black-Reihe - Buchpatenschaft - Lines Pages">
-    <title>Black-Reihe - Buchpatenschaft - Lines Pages</title>
+    <meta name="description" content="Aktuelle Rezensionen - Line's Pages">
+    <title>Aktuelle Rezensionen - Lines Pages</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -14,8 +14,19 @@
             background-color: #EED5D2;
             color: #333;
             min-height: 100vh;
-            display: flex;
-            flex-direction: column;
+            position: relative;
+            padding-bottom: 60px;
+            opacity: 0;
+            animation: fadeIn 0.8s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
         header {
@@ -60,7 +71,6 @@
             color: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            flex-grow: 1;
         }
 
         .content h2 {
@@ -76,32 +86,41 @@
         }
 
         .book-item {
-            margin-bottom: 40px;
+            margin-bottom: 80px;
         }
 
-        .book-item .book-text {
-            text-align: left;
-            margin-bottom: 15px;
+        hr {
+            border: 0;
+            height: 1px;
+            background: #CD9B9B;
+            margin: 40px 0;
         }
 
-        .book-item img {
-            display: block;
-            max-width: 250px;
+        .book-images {
+            margin-bottom: 20px;
+        }
+
+        .book-images img {
+            max-width: 350px;
             height: auto;
-            margin: 0 auto;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .book-item p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin: 0;
+            display: block;
         }
 
         .book-item h3 {
             font-size: 1.8em;
             color: #CD9B9B;
+            margin-bottom: 10px;
+        }
+
+        .book-item p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .book-item p.bold {
+            font-weight: bold;
         }
 
         footer {
@@ -109,8 +128,10 @@
             color: white;
             text-align: center;
             padding: 10px;
-            margin-top: auto;
+            position: fixed;
             width: 100%;
+            bottom: 0;
+            left: 0;
         }
 
         footer a {
@@ -122,7 +143,7 @@
             text-decoration: underline;
         }
 
-        /* Mobile Ansicht */
+        /* Mobile Optimization */
         @media (max-width: 768px) {
             .content {
                 padding: 10px;
@@ -132,12 +153,12 @@
                 font-size: 2em;
             }
 
-            .book-item img {
-                max-width: 60%; /* Bilder für die mobile Ansicht kleiner */
-            }
-
-            .book-item .book-text {
-                text-align: center; /* Text zentriert für mobile Ansicht */
+            .book-images img {
+                max-width: 200px; /* Kleinere Bilder für die mobile Ansicht */
+                height: auto;
+                margin: 0 auto; /* Zentriert die Bilder */
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             }
 
             .book-item h3 {
@@ -148,9 +169,13 @@
                 font-size: 1em;
             }
 
+            nav a {
+                font-size: 0.9em;
+            }
+
             .back-arrow {
-                font-size: 1.2em;
-                left: 15px;
+                font-size: 1em; /* Verkleinerung des Pfeils */
+                left: 10px; /* Ausrichtung näher am Rand */
             }
         }
     </style>
