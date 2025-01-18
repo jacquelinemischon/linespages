@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Top 5 Bücher für den Winter - Lines Pages">
-    <title>Top 5 Bücher für den Winter - Lines Pages</title>
+    <meta name="description" content="Rezensionsexemplare von Black Edition - Lines Pages">
+    <title>Rezensionsexemplare von Black Edition - Lines Pages</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        /* Allgemeine Seiteinstellungen */
         html, body {
             height: 100%;
             margin: 0;
             padding: 0;
             font-family: 'Playfair Display', serif;
-            background-color: #EED5D2;
+            background-color: #EED5D2; /* Rosa Hintergrundfarbe */
             color: #333;
-            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
         }
 
         body {
-            display: flex;
-            flex-direction: column;
             min-height: 100vh;
         }
 
@@ -29,7 +29,6 @@
             padding: 1rem;
             text-align: center;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-            position: relative;
             width: 100%;
         }
 
@@ -47,22 +46,26 @@
             text-decoration: underline;
         }
 
-        header nav a {
-            color: white;
+        nav a {
+            color: white; /* Setzt alle Links im Navigation-Bereich auf Weiß */
             text-decoration: none;
             font-weight: bold;
         }
 
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Inhaltsbereich */
         .content {
-            max-width: 1200px;
-            width: calc(100% - 40px);
-            margin: 40px auto;
+            max-width: 1200px; /* Gleiche Breite wie zuvor */
+            width: calc(100% - 40px); /* Flexibler Abstand an den Seiten */
+            margin: 40px auto; /* Abstand oben und unten */
             padding: 20px;
             background-color: #8B6969;
             color: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            flex-grow: 1;
         }
 
         .content h2 {
@@ -83,6 +86,13 @@
             line-height: 1.6;
         }
 
+        hr {
+            border: 0;
+            height: 1px;
+            background: #CD9B9B;
+            margin: 40px 0;
+        }
+
         .book-images {
             display: flex;
             flex-wrap: wrap;
@@ -91,28 +101,26 @@
         }
 
         .book-images img {
-            max-width: 350px;
-            height: auto;
+            max-width: 350px; /* Bilder haben maximal eine Breite von 350px */
+            height: auto; /* Höhe bleibt proportional */
             border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        hr {
-            border: 0;
-            height: 1px;
-            background: #CD9B9B;
-            margin: 40px 0;
-        }
-
+        /* Footer */
         footer {
             background-color: #8B6969;
             color: white;
             text-align: center;
-            padding: 10px;
-            width: 100%;
+            padding: 20px; /* Mehr Abstand im Footer */
+            width: 100%; /* Nimmt die volle Breite ein */
+            margin-top: 40px; /* Abstand zwischen Content und Footer */
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Leichter Schatteneffekt */
+            border-radius: 8px; /* Abgerundete Ecken wie beim Header */
         }
 
         footer a {
-            color: #fff;
+            color: white;
             text-decoration: none;
         }
 
@@ -131,13 +139,9 @@
                 padding: 15px;
             }
 
-            .book-images {
-                gap: 10px; /* Weniger Abstand zwischen Bildern */
-            }
-
             .book-images img {
-                max-width: 150px; /* Bilder kleiner machen */
-                height: auto;
+                max-width: 100%; /* Bilder passen sich bei kleinen Bildschirmen an */
+                margin-bottom: 15px;
             }
 
             footer {
@@ -145,7 +149,7 @@
             }
 
             .book-item p {
-                font-size: 1.1em; /* Schriftgröße leicht reduzieren */
+                font-size: 1.1em;
             }
         }
     </style>
