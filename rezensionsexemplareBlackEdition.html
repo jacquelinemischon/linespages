@@ -28,7 +28,6 @@
             color: white;
             padding: 1rem;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
             position: relative;
             width: 100%;
         }
@@ -54,9 +53,8 @@
             padding: 20px;
             background-color: #8B6969;
             color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            flex-grow: 1; /* Füllt den verbleibenden Platz, sodass der Footer unten bleibt */
+            border-radius: 8px; /* Runde Ecken */
+            flex-grow: 1; /* Füllt den Platz zwischen Header und Footer */
         }
 
         .content h2 {
@@ -64,38 +62,6 @@
             text-align: center;
             margin-bottom: 20px;
             color: white;
-            text-shadow: 2px 2px 4px black;
-        }
-
-        .book-item h3 {
-            font-size: 1.8em; /* Wiederhergestellte Schriftgröße */
-            color: #CD9B9B; /* Wiederhergestellte Schriftfarbe */
-        }
-
-        hr {
-            border: 0;
-            height: 1px;
-            background: #CD9B9B;
-            margin: 40px 0;
-        }
-
-        .book-images {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 10px;
-        }
-
-        .book-images img {
-            max-width: 350px; /* Bilder haben maximal eine Breite von 350px */
-            height: auto; /* Höhe bleibt proportional */
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .book-item p {
-            font-size: 1.2em; /* Wiederhergestellte Schriftgröße */
-            line-height: 1.6; /* Angenehme Zeilenhöhe */
         }
 
         footer {
@@ -104,6 +70,7 @@
             text-align: center;
             padding: 10px;
             width: 100%;
+            margin-top: auto; /* Stellt sicher, dass der Footer am Seitenende bleibt */
         }
 
         footer a {
@@ -125,86 +92,39 @@
                 padding: 15px;
             }
 
-            .book-images img {
-                max-width: 100%; /* Bilder passen sich bei kleinen Bildschirmen an */
-                margin-bottom: 15px;
-            }
-
             footer {
                 font-size: 0.9em;
-            }
-
-            .book-item p {
-                font-size: 1.1em; /* Leicht kleinere Schriftgröße auf mobilen Geräten */
             }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <a href="index.html" class="back-arrow">← Zurück</a>
-        <h1>Line's Pages</h1>
-    </header>
+<header>
+    <a href="index.html" class="back-arrow">← Zurück</a>
+    <h1>Line's Pages</h1>
+</header>
 
 <div class="content">
     <h2>Rezensionsexemplare von Black Edition</h2>
-    <div class="book-list">
-        <div class="book-item">
-            <h3>Drewmore Dynasty von Kari Tenero</h3>
-            <div class="book-images">
-                <img src="drewmoreDynastyCover.jpg" alt="Drewmore Dynasty Cover">
-            </div>
-            <p class="bold">Fesselnde Dark Romance voller Spannung, Drama und überraschenden Wendungen.</p>
-            <p>Dieses Buch hat mich von der ersten Seite an in seinen Bann gezogen! Mit den beliebten Tropes wie Reverse Harem, Bad Boys und einer taffen Protagonistin bietet die Geschichte alles, was das Herz eines Dark Romance-Fans begehrt - und noch so viel mehr. Vivien und ihre Schwester Lexy sind eigentlich unzertrennlich, doch ihre Pläne geraten ins Wanken, als sie auf unterschiedliche Universitäten landen. Von diesem Moment an überschlagen sich die Ereignisse: An beiden Unis passieren mysteriöse Dinge, und plötzlich häufen sich rätselhafte Morde. Man hat als Leser ständig das Gefühl, dass nichts so ist, wie es scheint.<br><br>Besonders gelungen sind die intensiven dramatischen Entwicklungen. Die Wendungen werden immer krasser, und man wird regelrecht durch die Geschichte gejagt, während die Spannung kontinuierlich steigt. Auch der Spice ist hervorragend - perfekt in die düstere und gefährliche Atmosphäre eingebettet.<br><br>Die Charaktere sind stark und facettenreich. Vivien ist eine Protagonistin, die sich nicht unterkriegen lässt, auch wenn das Chaos um sie herum eskaliert. Die Männer, die sie umgeben, haben alle ihre eigenen Geheimnisse und Abgründe, was sie unwiderstehlich und zugleich bedrohlich macht. Die Mischung aus Leidenschaft, Gefahr und Geheimnissen hält einen pausenlos gefesselt.<br><br>Ich kann es kaum erwarten, wie die Geschichte weitergeht - der Cliffhanger am Ende hat mich sprachlos zurückgelassen! Für Fans von Dark Romance, die es dramatisch und spicy mögen, ist dieses Buch ein absolutes Muss!</p>
+    <div class="book-item">
+        <h3>Drewmore Dynasty von Kari Tenero</h3>
+        <div class="book-images">
+            <img src="drewmoreDynastyCover.jpg" alt="Drewmore Dynasty Cover">
         </div>
-        <hr>
-    <div class="book-list">
-        <div class="book-item">
-            <h3>Hunted Hearts Chronicles von Katelyn Erikson</h3>
-            <div class="book-images">
-                <img src="darksideCovers.jpg" alt="Darkside 1 & 2 Cover">
-            </div>
-            <p class="bold">Meine persönliche Dark Romance Erfolgsdilogie!</p>
-            <p>Darkside hat mich wirklich überrascht. Zu Beginn war ich unsicher, ob ich weiterlesen sollte - die düstere Atmosphäre und die eindringliche Triggerwarnung ließen mich zögern. Doch genau diese Warnung hat mich auch fasziniert und zum Weiterlesen motiviert, was ich keineswegs bereue! Erikson schafft es, eine Spannung aufzubauen, die die Leser:innen sofort in die düstere Welt von Sloane zieht.<br><br>Die Handlung dreht sich um Sloane, deren Vergangenheit sie Stück für Stück einholt. Schließlich überschlagen sich die Ereignisse - und als Leser:in fiebert man unweigerlich mit. Besonders beeindruckt hat mich der fesselnde Schreibstil von Erikson, der es schwer macht, das Buch zur Seite zu legen. Ihre kurzen, prägnanten Kapitel verleihen der Geschichte eine Dynamik, bei der man gar nicht merkt, wie schnell die Seiten verfliegen. Ehe man sich versieht, sind hundert Seiten vorbei, und man will unbedingt wissen, wie es weitergeht.<br><br>Es ist wichtig zu erwähnen, dass die Triggerwarnungen ernst genommen werden sollten, da Darkside viele intensive und potenziell verstörende Themen behandelt. Trotzdem habe ich selten eine Contentwarnung erlebt, die mich so sehr in den Bann gezogen hat.<br><br>Für mich ist Darkside eines der absoluten Jahreshighlights im Bereich Dark Romance, und Band 2 hat mich noch mehr mitgenommen. Der weitere Verlauf sowie das Ende der Geschichte habe ich absolut nicht kommen sehen! Ich hatte viele Vermutungen... aber ich lag so falsch! Nach all den Wendungen hatte ich schon die Befürchtung, dass es diesmal kein "Happy End" geben wird, doch nach noch drei Wendungen lagen meine Nerven blank! Wer düstere, emotionale Geschichten liebt und sich nicht vor schweren Themen scheut, wird hier definitiv auf seine Kosten kommen.</p>
-        </div>
-        <hr>
-        <div class="book-item">
-            <h3></h3>Lie to me softly von Lea R. Eden</h3>
-            <div class="book-images">
-                <img src="lieToMeSoftlyCover.jpg" alt="Lie to me softly Cover">
-            </div>
-            <p class="bold">Never judge a book by its cover!</p>
-            <p>Das Buch wirkt auf den ersten Blick wie eine leichte Vorstadt-Romanze, offenbart jedoch eine tiefgründige und düstere Geschichte. Die Protagonistin May sehnt sich nach einer schweren Vergangenheit nach Ruhe und einem Neuanfang in der Kleinstadt Maple River. So weit, so gut. Doch als sie auf Evan trifft, der anfangs wie der perfekte Partner für ein neues Kapitel scheint, stellt sich heraus, dass auch dieses scheinbar idyllische Leben voller Geheimnisse und Abgründe ist. Die Autorin schafft eine intensive, fesselnde Atmosphäre mit detailreichen und emotionalen Beschreibungen, die Mays innere Konflikte und Sehnsüchte spürbar machen. Besonders der gekonnt inszenierte Spice verleiht der Geschichte Tiefe, ohne das Gleichgewicht zu verlieren. Eden hat einen derart lockeren und flüssigen Schreibstil, sodass ich binnen eines Tages durch das Buch gerutscht bin. Ein packendes Leseerlebnis für Dark Romance-Fans - doch bitte die Triggerwarnungen beachten!</p>
-        </div>
-        <hr>
-        <div class="book-item">
-            <h3>Regents von Isabelle North</h3>
-            <div class="book-images">
-                <img src="regentsCover.jpg" alt="Regents Cover">
-            </div>
-            <p class="bold">Erstes Buch mit schwarzen Seiten - bei einem Verlag!</p>
-            <p>Das Buch entführt seine Leser:innen in eine düstere Welt voller Magie, Leidenschaft und Gefahren. Im Zentrum steht eine starke Protagonistin, die sich in einem komplexen Netz aus Machtspielen, Intrigen und Verlangen wiederfindet. Der Fantasy Dark Romance-Ansatz trifft genau ins Schwarze - besonders durch das ungewöhnliche Reverse Harem mit acht Vampiren, die alle auf ihre Weise faszinierend und gefährlich sind. Diese Dynamik zwischen der Protagonistin Savannah und den Vampiren ist nicht nur aufregend, sondern gibt der Handlung Tiefe und Spannung.<br><br>Das Setting in einer Dark Academy passt perfekt zum düsteren Ton des Buches. Die Atmosphäre ist unheimlich und geheimnisvoll, was das Gefühl von Bedrohung und Verführung verstärkt. Jagen und gejagt werden sorgt immer wieder für spannende Wendungen und heizt das Wolf-and-Rabbit-Spiel zwischen den Figuren an.<br><br>Die Geschichte ist nicht nur spannend, sondern auch sehr spicy - ein Balanceakt, den die Autorin meisterhaft beherrscht. Es gelingt ihr, die erotischen Momente in die Handlung zu verweben, ohne dass sie deplatziert wirken.<br><br>Das Ende hat mich mit einem Gefühl der Leere zurückgelassen, so sehr möchte ich wissen, wie es weitergeht. Die Wartezeit auf Band 2 wird eine Herausforderung.<br><br>Ein weiteres Highlight sind die wunderschönen schwarzen Seiten und Illustrationen, die das Leseerlebnis zu einem visuellen Genuss machen. Die ästhetische Gestaltung des Buches verleiht der dunklen Atmosphäre noch mehr Ausdruck. Dennoch muss ich anmerken, dass sich auf meinem Exemplar die silber aufgedruckte Schrift des Covers ablöst. Zudem muss ich gestehen, dass das Buch mit unter 500 Seiten deutlich schwerer ist als andere vergleichbare Bücher.</p>
-        </div>
-        <hr>
-        <div class="book-item">
-            <h3>Scorpions Secret von Kristin Glimmer</h3>
-            <div class="book-images">
-                <img src="scorpionsSecretCover.jpg" alt="Scorpions Secret Cover">
-            </div>
-            <p class="bold">Spannende Mafia Dark Romance, die mich zudem sehr amüsiert hat!</p>
-            <p>In Scorpion's Secret begleiten wir Valentina, die mit ihrem besten Freund Roman in Russland eigentlich nur einen entspannten Urlaub machen wollte. Dann Roman wollte Valentina unbedingt seine Heimat zeigen. Doch nun werden sie von einnem russischen Mafiaboss entführt, der Roman gefangen hält und Valentina zu seinem größten Feind und dessen Bruder in die Türkei schickt, um diesen zu töten. <br><br>Ich wurde in wechselnden POV's durch ihre Vergangenheit begleitet und erlebte auch die ein oder andere spicy Szene, die perfekt platziert wurde. <br><br>Ich persönlich habe die beiden Brüder lieben gelernt, doch ich bin mir sicher, dass sich das Blat im nächsten Band noch wenden wird, da ich mit einem offenen Ende sprachlos zurückgelassen wurde. <br><br>Aber ich muss noch dazu sagen, dass es (in meinen Augen, da nicht jeder mein Humor teilt) ziemlich lustige Szenen gab, was mich positiv überrascht hat. <br><br>Kann Valentina den Brüdern vertrauen und ihren besten Freund retten? Eine absolute 5-Sterne Dark Romance mit den Tropes aus Mafia, Reverse Harem, Secret Identity, Bad Hero, Entführung und Obsession.</p>
-        </div>
-        <hr>
-        <div class="book-item">
-            <h3>Obsessed - Bis du mich liebst von Don Both und Maria O'Hara</h3>
-            <div class="book-images">
-                <img src="obsessedCoverEbook.jpg" alt="Obsessed Cover E-Book">
-            </div>
-            <p class="bold">Ich bin wie im Rausch - mit Mister Rush. Wie passend.</p>
-            <p>Die Story hat mich oft zum Schmunzeln gebracht und vor allem die Spice-Szenen haben mir sehr gut gefallen! Erotisch und düster. Der Stalker-Trope wurde hier sehr gut umgesetzt. Keaton ist eine red flag auf zwei (oder drei) Beinen, aber wir sind Dark Romance-Leser...also, wen interessiert's? ;)</p>
-        </div>
+        <p class="bold">Fesselnde Dark Romance voller Spannung, Drama und überraschenden Wendungen.</p>
+        <p>Dieses Buch hat mich von der ersten Seite an in seinen Bann gezogen...</p>
     </div>
+    <hr>
+    <div class="book-item">
+        <h3>Hunted Hearts Chronicles von Katelyn Erikson</h3>
+        <div class="book-images">
+            <img src="darksideCovers.jpg" alt="Darkside 1 & 2 Cover">
+        </div>
+        <p class="bold">Meine persönliche Dark Romance Erfolgsdilogie!</p>
+        <p>Darkside hat mich wirklich überrascht...</p>
+    </div>
+    <hr>
 </div>
 
 <footer>
