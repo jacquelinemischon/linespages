@@ -17,7 +17,7 @@
             padding: 0;
             background-color: #EED5D2;
             color: #333;
-            height: 100vh; /* Viewport-Höhe einhalten */
+            height: 100vh;
             display: flex;
             flex-direction: column;
         }
@@ -69,19 +69,18 @@
         }
 
         .content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+            max-width: 900px; /* Kleinere Breite */
+            margin: auto;
+            padding: 15px;
             background-color: #8B6969;
             color: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            flex: 1 1 auto; /* Nimmt den verfügbaren Platz ein */
-            overflow-y: auto; /* Inhalt scrollbar, falls nötig */
+            flex: 0 0 auto; /* Verhindert Ausdehnung */
         }
 
         .content h2 {
-            font-size: 2.5em;
+            font-size: 2.2em; /* Leicht kleinere Überschrift */
             text-align: center;
             margin-bottom: 20px;
             color: white;
@@ -101,7 +100,7 @@
         }
 
         .series-image img {
-            max-width: 300px;
+            max-width: 250px; /* Kleinere Bilder */
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
@@ -111,8 +110,8 @@
         }
 
         .series-description p {
-            font-size: 1.2em;
-            line-height: 1.6;
+            font-size: 1em; /* Kleinere Schriftgröße */
+            line-height: 1.5;
         }
 
         .series-right-image {
@@ -127,14 +126,14 @@
 
         .series-right-image img {
             flex: 1;
-            max-width: 400px;
+            max-width: 300px; /* Kleinere Bilder */
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .series-right-image .text p {
-            font-size: 1.2em;
-            line-height: 1.6;
+            font-size: 1em;
+            line-height: 1.5;
         }
 
         footer {
@@ -178,7 +177,7 @@
 
             .series-description p,
             .series-right-image .text p {
-                font-size: 1em;
+                font-size: 0.9em;
             }
         }
     </style>
