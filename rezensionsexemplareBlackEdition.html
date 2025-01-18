@@ -112,10 +112,14 @@
 
         footer {
             background-color: #8B6969;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            width: 100%;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        position: relative; /* Standardposition */
+        bottom: 0; /* Am unteren Rand verankert */
+        flex-shrink: 0; /* Verhindert, dass der Footer bei geringem Platz schrumpft */
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Leichter Schatten nach oben */
         }
 
         footer a {
@@ -131,6 +135,11 @@
             header {
                 text-align: center;
                 padding: 1rem 10px;
+            }
+        @media (max-width: 768px) {
+            footer {
+                font-size: 0.9em;
+                padding: 8px;
             }
 
             .content {
