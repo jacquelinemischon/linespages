@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rezensionsexemplare von Black Edition - Lines Pages">
     <title>Rezensionsexemplare von Black Edition - Lines Pages</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Grundlegendes Layout */
         html, body {
             height: 100%;
             margin: 0;
@@ -15,18 +14,15 @@
             font-family: 'Playfair Display', serif;
             background-color: #EED5D2;
             color: #333;
-            display: flex;
-            flex-direction: column;
+            overflow-x: hidden; /* Verhindert horizontales Scrollen */
         }
 
-        /* Body nimmt mindestens den gesamten Viewport ein */
         body {
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
+            min-height: 100vh; /* Sorgt dafür, dass der Body mindestens die Höhe des Viewports einnimmt */
         }
 
-        /* Header */
         header {
             background-color: #8B6969;
             color: white;
@@ -39,7 +35,7 @@
 
         .back-arrow {
             position: absolute;
-            left: 15px; /* Ursprüngliche Position des Pfeils */
+            left: 15px;
             top: 50%;
             transform: translateY(-50%);
             color: white;
@@ -51,17 +47,6 @@
             text-decoration: underline;
         }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Content */
         .content {
             max-width: 1200px;
             width: calc(100% - 40px);
@@ -69,8 +54,9 @@
             padding: 20px;
             background-color: #8B6969;
             color: white;
-            border-radius: 16px; /* Runde Ecken */
+            border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1; /* Füllt den verbleibenden Platz, sodass der Footer unten bleibt */
         }
 
         .content h2 {
@@ -82,13 +68,15 @@
         }
 
         .book-item h3 {
-            font-size: 1.8em;
-            color: #CD9B9B;
+            font-size: 1.8em; /* Wiederhergestellte Schriftgröße */
+            color: #CD9B9B; /* Wiederhergestellte Schriftfarbe */
         }
 
-        .book-item p {
-            font-size: 1.2em;
-            line-height: 1.6;
+        hr {
+            border: 0;
+            height: 1px;
+            background: #CD9B9B;
+            margin: 40px 0;
         }
 
         .book-images {
@@ -99,21 +87,23 @@
         }
 
         .book-images img {
-            max-width: 350px;
-            height: auto;
+            max-width: 350px; /* Bilder haben maximal eine Breite von 350px */
+            height: auto; /* Höhe bleibt proportional */
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        /* Footer */
+        .book-item p {
+            font-size: 1.2em; /* Wiederhergestellte Schriftgröße */
+            line-height: 1.6; /* Angenehme Zeilenhöhe */
+        }
+
         footer {
             background-color: #8B6969;
             color: white;
             text-align: center;
             padding: 10px;
             width: 100%;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
-            margin-top: auto; /* Footer am unteren Rand positionieren */
         }
 
         footer a {
@@ -125,7 +115,6 @@
             text-decoration: underline;
         }
 
-        /* Responsiveness */
         @media (max-width: 768px) {
             header {
                 text-align: center;
@@ -137,24 +126,25 @@
             }
 
             .book-images img {
-                max-width: 100%;
+                max-width: 100%; /* Bilder passen sich bei kleinen Bildschirmen an */
                 margin-bottom: 15px;
             }
 
             footer {
                 font-size: 0.9em;
             }
+
+            .book-item p {
+                font-size: 1.1em; /* Leicht kleinere Schriftgröße auf mobilen Geräten */
+            }
         }
     </style>
 </head>
 <body>
-
+    
 <header>
-    <a href="index.html" class="back-arrow">← Zurück</a>
-    <h1>Line's Pages</h1>
-    <nav>
-        <a href="aktuelleRezensionen.html">Aktuelle Rezensionen</a>
-    </nav>
+     <a href="index.html" class="back-arrow">← Zurück</a>
+     <h1>Line's Pages</h1>
 </header>
 
 <div class="content">
