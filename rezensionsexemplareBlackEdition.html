@@ -7,20 +7,20 @@
     <title>Rezensionsexemplare von Black Edition - Lines Pages</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Allgemeine Seiteinstellungen */
         html, body {
             height: 100%;
             margin: 0;
             padding: 0;
             font-family: 'Playfair Display', serif;
-            background-color: #EED5D2; /* Rosa Hintergrundfarbe */
+            background-color: #EED5D2;
             color: #333;
-            display: flex;
-            flex-direction: column;
+            overflow-x: hidden; /* Verhindert horizontales Scrollen */
         }
 
         body {
-            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Sorgt dafür, dass der Body mindestens die Höhe des Viewports einnimmt */
         }
 
         header {
@@ -47,26 +47,16 @@
             text-decoration: underline;
         }
 
-        nav a {
-            color: white; /* Setzt alle Links im Navigation-Bereich auf Weiß */
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Inhaltsbereich */
         .content {
             max-width: 1200px;
-            width: calc(100% - 40px); /* Gleiche Breite wie zuvor */
-            margin: 40px auto; /* Vertikaler Abstand zum Header und rosa Hintergrund sichtbar */
+            width: calc(100% - 40px);
+            margin: 40px auto;
             padding: 20px;
             background-color: #8B6969;
             color: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1; /* Füllt den verbleibenden Platz, sodass der Footer unten bleibt */
         }
 
         .content h2 {
@@ -78,13 +68,8 @@
         }
 
         .book-item h3 {
-            font-size: 1.8em;
-            color: #CD9B9B;
-        }
-
-        .book-item p {
-            font-size: 1.2em;
-            line-height: 1.6;
+            font-size: 1.8em; /* Wiederhergestellte Schriftgröße */
+            color: #CD9B9B; /* Wiederhergestellte Schriftfarbe */
         }
 
         hr {
@@ -102,25 +87,27 @@
         }
 
         .book-images img {
-            max-width: 350px;
-            height: auto;
+            max-width: 350px; /* Bilder haben maximal eine Breite von 350px */
+            height: auto; /* Höhe bleibt proportional */
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        /* Footer */
+        .book-item p {
+            font-size: 1.2em; /* Wiederhergestellte Schriftgröße */
+            line-height: 1.6; /* Angenehme Zeilenhöhe */
+        }
+
         footer {
             background-color: #8B6969;
             color: white;
             text-align: center;
             padding: 10px;
-            width: 100%; /* Nimmt die volle Breite ein */
-            margin-top: 20px; /* Abstand zwischen .content und Footer */
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Leichter Schatteneffekt */
+            width: 100%;
         }
 
         footer a {
-            color: white;
+            color: #fff;
             text-decoration: none;
         }
 
@@ -128,7 +115,6 @@
             text-decoration: underline;
         }
 
-        /* Mobile Ansicht */
         @media (max-width: 768px) {
             header {
                 text-align: center;
@@ -149,7 +135,7 @@
             }
 
             .book-item p {
-                font-size: 1.1em;
+                font-size: 1.1em; /* Leicht kleinere Schriftgröße auf mobilen Geräten */
             }
         }
     </style>
@@ -248,7 +234,7 @@
 </div>
 
 <footer>
-    <p>&copy; 2025 Line's Pages | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+    <p>&copy; 2025 Line's Pages | <a href="index.html">Zurück zur Startseite</a> | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
 </footer>
 
 </body>
