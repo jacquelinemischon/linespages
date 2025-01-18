@@ -14,13 +14,13 @@
             font-family: 'Playfair Display', serif;
             background-color: #EED5D2;
             color: #333;
-            overflow-x: hidden; /* Verhindert horizontales Scrollen */
+            overflow-x: hidden;
         }
 
         body {
             display: flex;
             flex-direction: column;
-            min-height: 100vh; /* Sorgt dafür, dass der Body mindestens die Höhe des Viewports einnimmt */
+            min-height: 100vh;
         }
 
         header {
@@ -56,7 +56,7 @@
             color: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            flex-grow: 1; /* Füllt den verbleibenden Platz, sodass der Footer unten bleibt */
+            flex-grow: 1;
         }
 
         .content h2 {
@@ -68,15 +68,13 @@
         }
 
         .book-item h3 {
-            font-size: 1.8em; /* Wiederhergestellte Schriftgröße */
-            color: #CD9B9B; /* Wiederhergestellte Schriftfarbe */
+            font-size: 1.8em;
+            color: #CD9B9B;
         }
 
-        hr {
-            border: 0;
-            height: 1px;
-            background: #CD9B9B;
-            margin: 40px 0;
+        .book-item p {
+            font-size: 1.2em;
+            line-height: 1.6;
         }
 
         .book-images {
@@ -87,15 +85,16 @@
         }
 
         .book-images img {
-            max-width: 350px; /* Bilder haben maximal eine Breite von 350px */
-            height: auto; /* Höhe bleibt proportional */
+            max-width: 350px;
+            height: auto;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .book-item p {
-            font-size: 1.2em; /* Wiederhergestellte Schriftgröße */
-            line-height: 1.6; /* Angenehme Zeilenhöhe */
+        hr {
+            border: 0;
+            height: 1px;
+            background: #CD9B9B;
+            margin: 40px 0;
         }
 
         footer {
@@ -115,6 +114,7 @@
             text-decoration: underline;
         }
 
+        /* Mobile Ansicht */
         @media (max-width: 768px) {
             header {
                 text-align: center;
@@ -125,9 +125,14 @@
                 padding: 15px;
             }
 
+            .book-images {
+                gap: 10px; /* Weniger Abstand zwischen Bildern */
+                justify-content: center; /* Bilder zentrieren */
+            }
+
             .book-images img {
-                max-width: 100%; /* Bilder passen sich bei kleinen Bildschirmen an */
-                margin-bottom: 15px;
+                max-width: 150px; /* Bilder kleiner machen */
+                height: auto;
             }
 
             footer {
@@ -135,7 +140,7 @@
             }
 
             .book-item p {
-                font-size: 1.1em; /* Leicht kleinere Schriftgröße auf mobilen Geräten */
+                font-size: 1.1em; /* Schriftgröße leicht reduzieren */
             }
         }
     </style>
