@@ -116,6 +116,14 @@
             align-self: flex-end;
         }
 
+        hr {
+            border: 0;
+            height: 1px;
+            background: #CD9B9B;
+            margin: 20px 0;
+            display: none; /* Standardmäßig ausgeblendet */
+        }
+
         .review-section {
             margin-top: 40px;
         }
@@ -157,19 +165,27 @@
 
             .book-item {
                 flex-direction: column;
-                align-items: flex-start; /* Bilder bleiben linksbündig */
+                align-items: flex-start; /* Bilder linksbündig */
             }
 
             .book-item img {
-                max-width: 150px; /* Bilder werden kleiner */
+                max-width: 150px; /* Bilder kleiner */
                 height: auto;
                 margin: 0 0 10px; /* Abstand zwischen Bild und Text */
-                align-self: flex-start; /* Links ausgerichtet */
+                align-self: flex-start;
             }
 
             .book-item .book-text {
-                text-align: left; /* Text linksbündig */
+                text-align: left;
                 font-size: 1.2em;
+            }
+
+            hr {
+                display: block; /* Sichtbar in mobiler Ansicht */
+            }
+
+            .header-image + hr {
+                display: none; /* hr unter dem Header-Bild bleibt unsichtbar */
             }
 
             .review-section {
@@ -177,7 +193,7 @@
             }
 
             .review-text p {
-                text-align: left; /* Text linksbündig */
+                text-align: left;
             }
 
             footer {
