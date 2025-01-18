@@ -14,13 +14,13 @@
             font-family: 'Playfair Display', serif;
             background-color: #EED5D2;
             color: #333;
-            overflow-x: hidden; /* Verhindert horizontales Scrollen */
+            overflow-x: hidden;
         }
 
         body {
             display: flex;
             flex-direction: column;
-            min-height: 100vh; /* Sorgt dafür, dass der Body mindestens die Höhe des Viewports einnimmt */
+            min-height: 100vh;
         }
 
         header {
@@ -47,13 +47,13 @@
         }
 
         header nav a {
-            color: white; /* Links im Header sind weiß */
+            color: white;
             text-decoration: none;
-            font-weight: bold; /* Fettgedruckt für bessere Sichtbarkeit */
+            font-weight: bold;
         }
 
         header nav a:hover {
-            text-decoration: underline; /* Unterstreichung bei Hover */
+            text-decoration: underline;
         }
 
         .content {
@@ -63,27 +63,27 @@
             padding: 20px;
             background-color: #8B6969;
             color: white;
-            border-radius: 8px; /* Runde Ecken */
-            flex-grow: 1; /* Füllt den Platz zwischen Header und Footer */
+            border-radius: 8px;
+            flex-grow: 1;
         }
 
         .content h2 {
             font-size: 2.5em;
             text-align: center;
             margin-bottom: 20px;
-            color: white; /* Überschrift bleibt weiß */
-            text-shadow: 2px 2px 4px black; /* Schwarze Umrandung */
+            color: white;
+            text-shadow: 2px 2px 4px black;
         }
 
         .book-item h3 {
-            font-size: 1.8em; /* Titel-Schriftgröße */
-            color: #CD9B9B; /* Farbe des Titels */
+            font-size: 1.8em;
+            color: #CD9B9B;
         }
 
         .book-item p {
-            font-size: 1.2em; /* Text-Schriftgröße */
-            color: white; /* Text bleibt weiß */
-            line-height: 1.6; /* Angenehme Zeilenhöhe */
+            font-size: 1.2em;
+            color: white;
+            line-height: 1.6;
         }
 
         .book-images {
@@ -102,7 +102,7 @@
         hr {
             border: 0;
             height: 2px;
-            background: #CD9B9B; /* Farbe des Trennstrichs */
+            background: #CD9B9B;
             margin: 40px 0;
         }
 
@@ -112,7 +112,7 @@
             text-align: center;
             padding: 10px;
             width: 100%;
-            margin-top: auto; /* Stellt sicher, dass der Footer am Seitenende bleibt */
+            margin-top: auto;
         }
 
         footer a {
@@ -124,6 +124,7 @@
             text-decoration: underline;
         }
 
+        /* Mobile Ansicht */
         @media (max-width: 768px) {
             header {
                 text-align: center;
@@ -134,12 +135,21 @@
                 padding: 15px;
             }
 
+            .book-images {
+                gap: 10px; /* Weniger Abstand zwischen Bildern */
+            }
+
+            .book-images img {
+                max-width: 150px; /* Bilder kleiner machen */
+                height: auto;
+            }
+
             footer {
                 font-size: 0.9em;
             }
 
-            .book-images img {
-                max-width: 100%;
+            .book-item p {
+                font-size: 1.1em; /* Schriftgröße leicht reduzieren */
             }
         }
     </style>
