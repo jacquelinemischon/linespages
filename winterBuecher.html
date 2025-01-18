@@ -131,15 +131,16 @@
             }
 
             .book-item {
-                flex-direction: column;
+                flex-direction: column; /* Spaltenansicht für mobile Geräte */
                 align-items: center;
                 text-align: center;
             }
 
             .book-item img {
-                max-width: 90%; /* Bilder passen sich flexibel an */
+                max-width: 70%; /* Kleinere maximale Breite für Bilder */
+                height: auto; /* Höhe proportional anpassen */
                 margin-top: 15px; /* Platz zwischen Text und Bild */
-                align-self: center; /* Zentriert in mobiler Ansicht */
+                align-self: center;
             }
 
             .content h2 {
