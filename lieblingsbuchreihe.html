@@ -118,7 +118,7 @@
             display: flex;
             flex-direction: row;
             gap: 20px;
-            align-items: center; /* Mittige Ausrichtung */
+            align-items: center;
             margin-top: 20px;
         }
 
@@ -133,7 +133,7 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Mittige Ausrichtung des Textes */
+            justify-content: center;
         }
 
         .series-right-image .text p {
@@ -160,6 +160,15 @@
 
         /* Mobile Ansicht */
         @media (max-width: 768px) {
+            header {
+                padding: 0.8rem;
+            }
+
+            .back-arrow {
+                font-size: 1.2em; /* Gleiche Größe wie in anderen Codes */
+                left: 15px;
+            }
+
             .series-info,
             .series-right-image {
                 flex-direction: column;
