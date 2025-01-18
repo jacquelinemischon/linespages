@@ -7,6 +7,7 @@
     <title>Rezensionsexemplare von Black Edition - Lines Pages</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        /* Allgemeine Seiteinstellungen */
         html, body {
             height: 100%;
             margin: 0;
@@ -21,17 +22,6 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh; /* Sorgt dafür, dass der Body mindestens die Höhe des Viewports einnimmt */
-            opacity: 0;
-            animation: fadeIn 0.8s ease-in-out forwards;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
         }
 
         header {
@@ -68,6 +58,7 @@
             text-decoration: underline;
         }
 
+        /* Inhaltsbereich */
         .content {
             max-width: 1200px;
             width: calc(100% - 40px);
@@ -77,7 +68,7 @@
             color: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            flex-grow: 1; /* Füllt den verbleibenden Platz, sodass der Footer unten bleibt */
+            flex-grow: 1; /* Füllt den verbleibenden Platz, sodass der Footer immer unten bleibt */
         }
 
         .content h2 {
@@ -88,6 +79,7 @@
             text-shadow: 2px 2px 4px black;
         }
 
+        /* Footer */
         footer {
             background-color: #8B6969;
             color: white;
@@ -95,6 +87,7 @@
             padding: 10px;
             width: 100%; /* Nimmt die volle Breite ein */
             box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Leichter Schatteneffekt */
+            margin-top: auto; /* Stellt sicher, dass der Footer immer am Ende bleibt */
         }
 
         footer a {
@@ -106,6 +99,7 @@
             text-decoration: underline;
         }
 
+        /* Mobile Ansicht */
         @media (max-width: 768px) {
             header {
                 text-align: center;
