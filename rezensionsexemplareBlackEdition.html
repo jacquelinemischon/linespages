@@ -9,14 +9,13 @@
     <style>
         html, body {
             height: 100%;
-            margin: 0;
-            padding: 0;
-            font-family: 'Playfair Display', serif;
-            background-color: #EED5D2;
-            color: #333;
-            overflow-x: hidden; /* Verhindert horizontales Scrollen */
-            display: flex;
-            flex-direction: column;
+        margin: 0;
+        padding: 0;
+        font-family: 'Playfair Display', serif;
+        background-color: #EED5D2;
+        color: #333;
+        display: flex;
+        flex-direction: column;
         }
 
         body {
@@ -31,7 +30,6 @@
             padding: 1rem;
             text-align: center;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-            position: relative;
             width: 100%;
         }
 
@@ -58,9 +56,9 @@
             color: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            flex-grow: 1; /* Füllt den verbleibenden Platz, sodass der Footer unten bleibt */
+            flex-grow: 1; /* Füllt den verbleibenden Platz zwischen Header und Footer */
         }
-
+    
         .content h2 {
             font-size: 2.5em;
             text-align: center;
@@ -112,14 +110,12 @@
 
         footer {
             background-color: #8B6969;
-        color: white;
-        text-align: center;
-        padding: 10px;
-        width: 100%;
-        position: relative; /* Standardposition */
-        bottom: 0; /* Am unteren Rand verankert */
-        flex-shrink: 0; /* Verhindert, dass der Footer bei geringem Platz schrumpft */
-        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Leichter Schatten nach oben */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Trennung durch Schatten */
+            margin-top: auto; /* Positioniert den Footer immer am unteren Rand */
         }
 
         footer a {
@@ -131,16 +127,11 @@
             text-decoration: underline;
         }
 
-        @media (max-width: 768px) {
-            header {
+     @media (max-width: 768px) {
+            header, footer {
                 text-align: center;
                 padding: 1rem 10px;
-            }
-        @media (max-width: 768px) {
-            footer {
-                font-size: 0.9em;
-                padding: 8px;
-            }
+              }
 
             .content {
                 padding: 15px;
