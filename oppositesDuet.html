@@ -157,18 +157,18 @@
 
             .book-item {
                 flex-direction: column;
-                align-items: center;
+                align-items: flex-start; /* Bilder bleiben linksbündig */
             }
 
             .book-item img {
-                max-width: 100%;
+                max-width: 150px; /* Bilder werden kleiner */
                 height: auto;
-                margin: 0 auto;
-                align-self: center;
+                margin: 0 0 10px; /* Abstand zwischen Bild und Text */
+                align-self: flex-start; /* Links ausgerichtet */
             }
 
             .book-item .book-text {
-                text-align: center;
+                text-align: left; /* Text linksbündig */
                 font-size: 1.2em;
             }
 
@@ -177,7 +177,7 @@
             }
 
             .review-text p {
-                text-align: center;
+                text-align: left; /* Text linksbündig */
             }
 
             footer {
