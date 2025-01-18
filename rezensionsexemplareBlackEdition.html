@@ -7,26 +7,20 @@
     <title>Rezensionsexemplare von Black Edition - Lines Pages</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Playfair Display', serif;
+        html, body {
+            height: 100%;
             margin: 0;
             padding: 0;
+            font-family: 'Playfair Display', serif;
             background-color: #EED5D2;
             color: #333;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column; /* Macht den Footer Teil des flexbox-Layouts */
-            opacity: 0;
-            animation: fadeIn 0.8s ease-in-out forwards;
+            overflow-x: hidden; /* Verhindert horizontales Scrollen */
         }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Sorgt dafür, dass der Body mindestens die Höhe des Viewports einnimmt */
         }
 
         header {
@@ -36,6 +30,7 @@
             text-align: center;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
             position: relative;
+            width: 100%;
         }
 
         .back-arrow {
@@ -52,29 +47,16 @@
             text-decoration: underline;
         }
 
-        nav {
-            margin-top: 0.5rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 700;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
         .content {
-            flex: 1; /* Dieser Bereich füllt den verbleibenden Platz aus */
             max-width: 1200px;
+            width: calc(100% - 40px);
             margin: 40px auto;
             padding: 20px;
             background-color: #8B6969;
             color: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1; /* Füllt den verbleibenden Platz, sodass der Footer unten bleibt */
         }
 
         .content h2 {
@@ -85,35 +67,6 @@
             text-shadow: 2px 2px 4px black;
         }
 
-        .book-list {
-            margin: 20px 0;
-        }
-
-        .book-item {
-            margin-bottom: 80px;
-        }
-
-        hr {
-            border: 0;
-            height: 1px;
-            background: #CD9B9B;
-            margin: 40px 0;
-        }
-
-        .book-images {
-            margin-bottom: 20px;
-        }
-
-        .book-item .book-text {
-            margin-bottom: 20px;
-            text-align: left;
-        }
-
-        .book-item h3 {
-            font-size: 1.8em;
-            color: #CD9B9B;
-        }
-
         .book-images {
             display: flex;
             flex-wrap: wrap;
@@ -122,19 +75,10 @@
         }
 
         .book-images img {
-            max-width: 350px;
-            height: auto;
+            max-width: 350px; /* Bilder haben maximal eine Breite von 350px */
+            height: auto; /* Höhe bleibt proportional */
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .book-item p {
-            font-size: 1.2em;
-            line-height: 1.6;
-        }
-
-        .book-item p.bold {
-            font-weight: bold;
         }
 
         footer {
@@ -154,7 +98,6 @@
             text-decoration: underline;
         }
 
-        /* Mobile Ansicht */
         @media (max-width: 768px) {
             header {
                 text-align: center;
@@ -165,47 +108,13 @@
                 padding: 15px;
             }
 
-            .book-item {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .book-images {
-                flex-direction: column;
-                align-items: center;
-            }
-
             .book-images img {
-                max-width: 100%;
+                max-width: 100%; /* Bilder passen sich bei kleinen Bildschirmen an */
                 margin-bottom: 15px;
             }
 
-            .book-item .book-text {
-                text-align: center;
-            }
-
-            .content h2 {
-                font-size: 2em;
-            }
-
             footer {
-                padding: 10px;
                 font-size: 0.9em;
-            }
-
-            .back-arrow {
-                font-size: 1.2em; /* Anpassung der Größe des Pfeils */
-                left: 10px; /* Abstand links verringert */
-                top: 50%; /* Zentriert im Header */
-                transform: translateY(-50%);
-            }
-
-            nav {
-                margin-top: 0.5rem;
-            }
-
-            nav a {
-                font-size: 0.9em; /* Kleinere Schriftgröße für Links */
             }
         }
     </style>
