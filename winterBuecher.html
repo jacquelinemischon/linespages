@@ -30,13 +30,14 @@
             text-align: center;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
             width: 100%;
+            position: relative;
         }
 
         .back-arrow {
             position: absolute;
-            left: 15px;
-            top: 50%;
-            transform: translateY(-50%);
+            top: 50%; /* Zentriert vertikal */
+            left: 15px; /* Abstand vom linken Rand */
+            transform: translateY(-50%); /* Vertikal mittig ausrichten */
             color: white;
             font-size: 1.5em;
             text-decoration: none;
@@ -135,12 +136,18 @@
                 padding: 1rem 10px;
             }
 
+            .back-arrow {
+                left: 10px; /* Weniger Abstand links für kleinere Geräte */
+                font-size: 1.3em; /* Kleinere Schriftgröße */
+            }
+
             .content {
                 padding: 15px;
             }
 
             .book-images img {
-                max-width: 100%; /* Bilder passen sich bei kleinen Bildschirmen an */
+                max-width: 200px; /* Bilder kleiner darstellen */
+                height: auto;
                 margin-bottom: 15px;
             }
 
