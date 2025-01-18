@@ -13,14 +13,14 @@
             margin: 0;
             padding: 0;
             font-family: 'Playfair Display', serif;
-            background-color: #EED5D2;
+            background-color: #EED5D2; /* Rosa Hintergrundfarbe */
             color: #333;
             display: flex;
             flex-direction: column;
         }
 
         body {
-            min-height: 100vh; /* Stellt sicher, dass der Body mindestens die volle Höhe des Viewports einnimmt */
+            min-height: 100vh;
         }
 
         header {
@@ -60,14 +60,13 @@
         /* Inhaltsbereich */
         .content {
             max-width: 1200px;
-            width: calc(100% - 40px);
-            margin: 40px auto;
+            width: calc(100% - 40px); /* Gleiche Breite wie zuvor */
+            margin: 40px auto; /* Vertikaler Abstand zum Header und rosa Hintergrund sichtbar */
             padding: 20px;
             background-color: #8B6969;
             color: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            flex-grow: 1; /* Füllt den verbleibenden Platz, damit der Footer immer am unteren Rand bleibt */
         }
 
         .content h2 {
@@ -80,12 +79,12 @@
 
         .book-item h3 {
             font-size: 1.8em;
-            color: #CD9B9B; /* Wiederhergestellte ursprüngliche Schriftfarbe */
+            color: #CD9B9B;
         }
 
         .book-item p {
-            font-size: 1.2em; /* Wiederhergestellte ursprüngliche Schriftgröße */
-            line-height: 1.6; /* Angenehme Zeilenhöhe */
+            font-size: 1.2em;
+            line-height: 1.6;
         }
 
         hr {
@@ -103,8 +102,8 @@
         }
 
         .book-images img {
-            max-width: 350px; /* Bilder haben maximal eine Breite von 350px */
-            height: auto; /* Höhe bleibt proportional */
+            max-width: 350px;
+            height: auto;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
@@ -116,7 +115,7 @@
             text-align: center;
             padding: 10px;
             width: 100%; /* Nimmt die volle Breite ein */
-            margin-top: auto; /* Schiebt den Footer ans Ende, wenn der Inhalt nicht ausreicht */
+            margin-top: 20px; /* Abstand zwischen .content und Footer */
             box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Leichter Schatteneffekt */
         }
 
@@ -150,7 +149,7 @@
             }
 
             .book-item p {
-                font-size: 1.1em; /* Kleinere Schriftgröße für mobile Geräte */
+                font-size: 1.1em;
             }
         }
     </style>
