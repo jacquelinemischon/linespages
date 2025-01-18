@@ -96,14 +96,16 @@
 
         .book-images {
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
             gap: 20px;
             margin-top: 10px;
         }
 
         .book-images img {
-            max-width: 350px; /* Bilder haben maximal eine Breite von 350px */
-            height: auto; /* Höhe bleibt proportional */
+            width: 250px; /* Einheitliche Breite */
+            height: 350px; /* Einheitliche Höhe */
+            object-fit: cover; /* Inhalt skaliert ohne Verzerrung */
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
@@ -146,8 +148,8 @@
             }
 
             .book-images img {
-                max-width: 200px; /* Bilder kleiner darstellen */
-                height: auto;
+                width: 150px; /* Kleinere Bilder in der mobilen Ansicht */
+                height: 200px;
                 margin-bottom: 15px;
             }
 
