@@ -132,16 +132,15 @@
 
             .book-item {
                 flex-direction: column;
-                align-items: center;
-                text-align: center;
+                align-items: flex-start;
+                text-align: left;
             }
 
             .book-item img {
-                width: 50%; /* Reduziert die Breite */
-                max-width: 150px; /* Maximale Breite */
+                max-width: 50%; /* Kleinere maximale Breite für Bilder */
                 height: auto; /* Höhe proportional anpassen */
                 margin-top: 15px; /* Platz zwischen Text und Bild */
-                align-self: center; /* Zentriert in mobiler Ansicht */
+                align-self: flex-start; /* Linksbündige Ausrichtung */
             }
 
             .content h2 {
