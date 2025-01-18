@@ -89,9 +89,10 @@
         }
 
         .book-item img {
-            flex: 1;
+            flex: 0 0 auto; /* Flex-Basis entfernen */
             max-width: 200px;
-            height: auto;
+            width: 100%; /* Passt sich an die Breite des Containers an */
+            height: auto; /* Höhe proportional */
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
@@ -137,10 +138,10 @@
             }
 
             .book-item img {
-                max-width: 50%; /* Kleinere maximale Breite für Bilder */
-                height: auto; /* Höhe proportional anpassen */
-                margin-top: 15px; /* Platz zwischen Text und Bild */
-                align-self: flex-start; /* Linksbündige Ausrichtung */
+                max-width: 80%; /* Kleinere maximale Breite */
+                height: auto; /* Beibehaltung der Proportionen */
+                margin-top: 15px;
+                align-self: flex-start; /* Linksbündig unter dem Text */
             }
 
             .content h2 {
