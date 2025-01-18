@@ -29,6 +29,7 @@
             padding: 1rem;
             text-align: center;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
             width: 100%;
         }
 
@@ -58,14 +59,15 @@
 
         /* Inhaltsbereich */
         .content {
-            max-width: 1200px; /* Gleiche Breite wie zuvor */
-            width: calc(100% - 40px); /* Flexibler Abstand an den Seiten */
-            margin: 40px auto; /* Abstand oben und unten */
+            max-width: 1200px;
+            width: calc(100% - 40px); /* Gleiche Breite wie zuvor */
+            margin: 40px auto; /* Vertikaler Abstand zum Header und rosa Hintergrund sichtbar */
             padding: 20px;
             background-color: #8B6969;
             color: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1; /* Inhaltsbereich nimmt den verbleibenden Platz ein */
         }
 
         .content h2 {
@@ -101,8 +103,8 @@
         }
 
         .book-images img {
-            max-width: 350px; /* Bilder haben maximal eine Breite von 350px */
-            height: auto; /* Höhe bleibt proportional */
+            max-width: 350px;
+            height: auto;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
@@ -112,11 +114,10 @@
             background-color: #8B6969;
             color: white;
             text-align: center;
-            padding: 20px; /* Mehr Abstand im Footer */
+            padding: 10px;
             width: 100%; /* Nimmt die volle Breite ein */
-            margin-top: 40px; /* Abstand zwischen Content und Footer */
+            margin-top: auto; /* Drückt den Footer an das Ende */
             box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Leichter Schatteneffekt */
-            border-radius: 8px; /* Abgerundete Ecken wie beim Header */
         }
 
         footer a {
@@ -146,6 +147,7 @@
 
             footer {
                 font-size: 0.9em;
+                padding: 15px;
             }
 
             .book-item p {
