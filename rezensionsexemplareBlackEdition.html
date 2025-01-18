@@ -7,20 +7,19 @@
     <title>Rezensionsexemplare von Black Edition - Lines Pages</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Basis-Layout */
         html, body {
+            height: 100%;
             margin: 0;
             padding: 0;
             font-family: 'Playfair Display', serif;
             background-color: #EED5D2;
             color: #333;
-            height: 100%; /* Stellt sicher, dass die Seite die volle Höhe einnimmt */
+            display: flex;
+            flex-direction: column; /* Layout: Header, Content, Footer */
         }
 
         body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Mindestens die Höhe des Viewports */
+            min-height: 100vh; /* Stellt sicher, dass der Body die Viewport-Höhe einnimmt */
         }
 
         header {
@@ -48,7 +47,7 @@
         }
 
         .content {
-            flex: 1; /* Flex-grow: Content füllt den verbleibenden Platz */
+            flex: 1; /* Content füllt den Platz zwischen Header und Footer */
             max-width: 1200px;
             margin: 40px auto;
             padding: 20px;
@@ -96,10 +95,10 @@
             background-color: #8B6969;
             color: white;
             text-align: center;
-            padding: 20px 10px;
+            padding: 10px; /* Abstand innerhalb des Footers */
             width: 100%;
-            box-sizing: border-box;
-            position: relative; /* Am Ende der Seite platziert */
+            box-sizing: border-box; /* Padding in die Breite einrechnen */
+            flex-shrink: 0; /* Footer bleibt in seiner Größe unverändert */
         }
 
         footer a {
