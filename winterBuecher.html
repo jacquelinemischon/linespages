@@ -78,7 +78,7 @@
 
         .book-item {
             display: flex;
-            align-items: flex-end;
+            align-items: flex-start;
             gap: 20px;
             margin-bottom: 40px;
         }
@@ -133,16 +133,13 @@
             .book-item {
                 flex-direction: column;
                 align-items: center;
-            }
-
-            .book-item .book-text {
                 text-align: center;
             }
 
             .book-item img {
                 max-width: 90%; /* Bilder passen sich flexibel an */
-                height: auto; /* Beibehaltung der Proportionen */
                 margin-top: 15px; /* Platz zwischen Text und Bild */
+                align-self: center; /* Zentriert in mobiler Ansicht */
             }
 
             .content h2 {
