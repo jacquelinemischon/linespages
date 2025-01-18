@@ -69,14 +69,14 @@
         }
 
         .content {
-            max-width: 1000px; /* Breitere Textbox */
-            margin: 30px auto; /* Abstand oben und unten */
-            padding: 30px; /* Größeres Padding */
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 30px;
             background-color: #8B6969;
             color: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            flex: 1; /* Flexbox, damit der Footer unten bleibt */
+            flex: 1;
         }
 
         .content h2 {
@@ -100,7 +100,7 @@
         }
 
         .series-image img {
-            max-width: 280px; /* Etwas größere Bilder */
+            max-width: 280px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
@@ -110,7 +110,7 @@
         }
 
         .series-description p {
-            font-size: 1.1em; /* Etwas größere Schrift */
+            font-size: 1.1em;
             line-height: 1.6;
         }
 
@@ -121,14 +121,18 @@
         }
 
         .series-right-image .text {
-            flex: 2;
+            flex: 1;
+            position: relative;
         }
 
         .series-right-image img {
             flex: 1;
-            max-width: 350px; /* Größere Bilder */
+            max-width: 300px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            bottom: 0;
+            right: 0;
         }
 
         .series-right-image .text p {
@@ -164,6 +168,7 @@
             .series-image img,
             .series-right-image img {
                 max-width: 90%;
+                position: static;
             }
 
             .series-description,
