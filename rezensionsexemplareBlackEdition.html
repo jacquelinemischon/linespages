@@ -15,14 +15,23 @@
             background-color: #EED5D2;
             color: #333;
             overflow-x: hidden; /* Verhindert horizontales Scrollen */
-            display: flex;
-            flex-direction: column;
         }
 
         body {
             display: flex;
             flex-direction: column;
             min-height: 100vh; /* Sorgt dafür, dass der Body mindestens die Höhe des Viewports einnimmt */
+            opacity: 0;
+            animation: fadeIn 0.8s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
         header {
@@ -31,6 +40,7 @@
             padding: 1rem;
             text-align: center;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
             width: 100%;
         }
 
@@ -45,6 +55,16 @@
         }
 
         .back-arrow:hover {
+            text-decoration: underline;
+        }
+
+        nav a {
+            color: white; /* Setzt alle Links im Navigation-Bereich auf Weiß */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
             text-decoration: underline;
         }
 
@@ -68,27 +88,13 @@
             text-shadow: 2px 2px 4px black;
         }
 
-        nav a {
-            color: white; /* Setzt alle Links im Navigation-Bereich auf Weiß */
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
         footer {
             background-color: #8B6969;
             color: white;
             text-align: center;
-            padding: 1rem;
+            padding: 10px;
             width: 100%; /* Nimmt die volle Breite ein */
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Schatteneffekt wie beim Header */
-        }
-
-        footer p {
-            margin: 0;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Leichter Schatteneffekt */
         }
 
         footer a {
