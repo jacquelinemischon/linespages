@@ -20,7 +20,7 @@
         }
 
         body {
-            min-height: 100vh; /* Body mindestens so hoch wie der Viewport */
+            min-height: 100vh;
         }
 
         header {
@@ -58,7 +58,7 @@
 
         /* Inhaltsbereich */
         .content {
-            max-width: 1200px; /* Gleiche Breite wie vorher */
+            max-width: 1200px; /* Gleiche Breite wie zuvor */
             width: calc(100% - 40px); /* Flexibler Abstand an den Seiten */
             margin: 40px auto; /* Abstand oben und unten */
             padding: 20px;
@@ -66,8 +66,6 @@
             color: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            max-height: 80vh; /* Begrenzung der Länge der Box */
-            overflow-y: auto; /* Scrollen bei zu viel Inhalt */
         }
 
         .content h2 {
@@ -114,10 +112,11 @@
             background-color: #8B6969;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 20px; /* Mehr Abstand im Footer */
             width: 100%; /* Nimmt die volle Breite ein */
-            margin-top: 20px; /* Abstand zwischen .content und Footer */
+            margin-top: 40px; /* Abstand zwischen Content und Footer */
             box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Leichter Schatteneffekt */
+            border-radius: 8px; /* Abgerundete Ecken wie beim Header */
         }
 
         footer a {
