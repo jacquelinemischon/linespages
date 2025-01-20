@@ -145,7 +145,6 @@
         }
 
         .blog-post {
-            position: relative;
             flex: 1 1 calc(33% - 20px);
             background-color: #CD9B9B;
             border-radius: 8px;
@@ -159,23 +158,19 @@
         }
 
         .blog-post a {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             height: 100%;
             text-decoration: none;
             color: inherit;
             padding: 20px;
-            z-index: 1;
+            box-sizing: border-box;
         }
 
         .blog-post h3,
         .blog-post p {
-            position: relative;
-            z-index: 2;
-            pointer-events: none;
+            margin: 0;
         }
 
         footer {
