@@ -88,12 +88,10 @@
         a {
             color: white;
             text-decoration: none;
-            border-bottom: 2px solid white;
         }
 
         a:hover {
-            text-decoration: none;
-            border-bottom: 2px solid #CD9B9B;
+            text-decoration: underline;
             color: white;
         }
 
@@ -147,16 +145,37 @@
         }
 
         .blog-post {
+            position: relative;
             flex: 1 1 calc(33% - 20px);
             background-color: #CD9B9B;
-            padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
+            overflow: hidden;
         }
 
         .blog-post:hover {
             transform: translateY(-10px);
+        }
+
+        .blog-post a {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: inherit;
+            padding: 20px;
+            z-index: 1;
+        }
+
+        .blog-post h3,
+        .blog-post p {
+            position: relative;
+            z-index: 2;
+            pointer-events: none;
         }
 
         footer {
@@ -176,7 +195,6 @@
             text-decoration: underline;
         }
 
-        /* Mobile Ansicht */
         @media (max-width: 768px) {
             .hero {
                 padding: 30px 10px;
